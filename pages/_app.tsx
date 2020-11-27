@@ -2,7 +2,7 @@ import React from "react"
 import { AppProps } from "next/app"
 import { NextSeo } from "next-seo"
 
-import GlobalStyle from "../styles/global"
+import GlobalStyle from "../styles/index"
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
   const url = "https://next-project-setup.vercel.app" + router.pathname

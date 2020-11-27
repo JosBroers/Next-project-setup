@@ -6,15 +6,11 @@ const Theme = createGlobalStyle`
     --color-white: #fff;
   }
 
-  ::-moz-selection {
-    color: var(--color-white);
-    background: var(--color-white);
-  }
-
   ::selection {
     color: var(--color-white);
     background: var(--color-black);
   }
+
 
   ::placeholder {
   color: var(--color-black);
