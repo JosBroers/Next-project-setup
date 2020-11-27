@@ -1,4 +1,4 @@
-# OOGT + DatoCMS
+# Next project setup
 
 ## Prerequisites
 
