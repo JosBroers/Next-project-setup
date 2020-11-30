@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Install the Node version listed in `.nvmrc` (use a Node version manager such as [NVM for Mac](https://github.com/nvm-sh/nvm) or [Nodist for Windows](https://github.com/nullivex/nodist))
+Install the Node version listed in `.nvmrc` (use a Node version manager such as [NVM for Mac](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows))
 
 ## Scripts
 
