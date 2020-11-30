@@ -33,8 +33,6 @@ export default class MyDocument extends Document {
       <Html lang="nl">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="preconnect" href="https://rsms.me/" />
-          <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
         </Head>
         <body>
           <Main />

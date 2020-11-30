@@ -2,6 +2,7 @@ import React from "react"
 import { AppProps } from "next/app"
 import { NextSeo } from "next-seo"
 
+import "../fonts/inter.css"
 import GlobalStyle from "../styles/index"
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
