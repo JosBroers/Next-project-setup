@@ -4,31 +4,27 @@ const globby = require("globby")
 async function generateSitemap() {
   const pages = await globby(["pages/**/*.tsx", "!pages/_*.tsx", "!pages/api"])
 
-  const sitemap = `
-    <?xml version="1.0" encoding="UTF-8"?>
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemap.org/schemas.sitemap/0.9">
       ${pages
         .map(page => {
           const path = page.replace("pages", "").replace(".tsx", "")
           const route = path === "index" ? "" : path
 
-          if (route === "/") {
-            return `
-              <url>
-                <loc>${`https://next-project-setup.vercel.app/${route}`}</loc>
-              </url>
-            `
+          if (route === "") {
+            return `<url>
+                <loc>${`https://next-project-setup.vercel.app${route}`}</loc>
+                <lastmod>${new Date().getFullYear()}</lastmod>
+                <priority>1</priority>
+              </url>`
           } else {
-            return `
-              <url>
-                <loc>${`https://next-project-setup.vercel.app/${route}`}</loc>
-              </url>
-            `
+            return `<url>
+                <loc>${`https://next-project-setup.vercel.app${route}`}</loc>
+              </url>`
           }
         })
         .join("")}
-    </urlset>
-  `
+    </urlset>`
 
   fs.writeFileSync("public/sitemap.xml", sitemap)
 }
