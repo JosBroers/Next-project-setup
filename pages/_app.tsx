@@ -3,7 +3,7 @@ import { AppProps } from "next/app"
 import { NextSeo } from "next-seo"
 import { AnimatePresence, motion } from "framer-motion"
 
-import "../fonts/inter.css"
+import "../styles.css"
 import GlobalStyle from "../styles/index"
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
