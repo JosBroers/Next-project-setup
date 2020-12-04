@@ -25,7 +25,7 @@ export default function Home() {
         }}
       />
       <Container>
-        <h1>Next.js project setup</h1>
+        <h1>Page Not Found</h1>
       </Container>
     </>
   )
