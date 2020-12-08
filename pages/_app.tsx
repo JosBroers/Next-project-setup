@@ -1,20 +1,24 @@
 import React from "react"
-import { AppProps } from "next/app"
+import type { AppProps } from "next/app"
+import Head from "next/head"
 import { NextSeo } from "next-seo"
 import { AnimatePresence, motion } from "framer-motion"
 
-import "../fonts/inter.css"
+import "../fonts.css"
 import GlobalStyle from "../styles/index"
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
+export default function MyApp({ Component, pageProps, router }: AppProps) {
   const url = "https://next-project-setup.vercel.app" + router.pathname
+  const siteName = "Next Project Setup"
   const title = "Next Project Setup"
   const description = ""
   const image = ""
-  const siteName = "Next Project Setup"
 
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
       <NextSeo
         titleTemplate={"%s | " + siteName}
         title={title}
@@ -78,5 +82,3 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
     </>
   )
 }
-
-export default MyApp
