@@ -67,8 +67,7 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
             pageAnimate: {
               opacity: 1,
               transition: {
-                velocity: 100,
-                type: "Inertia",
+                duration: 0.5,
               },
             },
             pageExit: {
