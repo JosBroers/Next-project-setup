@@ -2,12 +2,18 @@ import React from "react"
 import styled from "styled-components"
 import { NextSeo } from "next-seo"
 
-const Container = styled.div``
+const Container = styled.div`
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 25px;
+`
 
 export default function Home() {
   const title = "Homepage"
-  const description = ""
-  const image = ""
+  const description =
+    "This repository is a setup project which can be used for starting an application with Next.js."
+  const image = "/images/thumbnail.png"
 
   return (
     <>
@@ -25,7 +31,11 @@ export default function Home() {
         }}
       />
       <Container>
-        <h1>Next.js project setup</h1>
+        <h1>Next.js Project Setup</h1>
+        <p>
+          This repository is a setup project which can be used for starting an application with
+          Next.js.
+        </p>
       </Container>
     </>
   )

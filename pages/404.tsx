@@ -5,18 +5,15 @@ import { NextSeo } from "next-seo"
 const Container = styled.div``
 
 export default function Home() {
-  const title = "404"
-  const description = ""
-  const image = ""
+  const title = "Page not found"
+  const image = "/images/thumbnail.png"
 
   return (
     <>
       <NextSeo
         title={title}
-        description={description}
         openGraph={{
           title: title,
-          description: description,
           images: [
             {
               url: image,
@@ -25,7 +22,7 @@ export default function Home() {
         }}
       />
       <Container>
-        <h1>Next.js project setup</h1>
+        <h1>This page cannot be found.</h1>
       </Container>
     </>
   )
