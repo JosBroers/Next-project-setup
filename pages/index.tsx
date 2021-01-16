@@ -3,10 +3,15 @@ import styled from "styled-components"
 import { NextSeo } from "next-seo"
 
 const Container = styled.div`
-  width: 100%;
-  max-width: 1080px;
+  width: calc(100% - 40px);
+  max-width: 1060px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 35px;
+    line-height: 1.5em;
+  }
 `
 
 export default function Home() {
