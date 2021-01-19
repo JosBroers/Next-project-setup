@@ -15,6 +15,12 @@ const Global = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  @supports (font-variation-settings: normal) {
+    body {
+      font-family: 'Inter var', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    }
+  }
+
   a,
   button {
     color: var(--color-black);
