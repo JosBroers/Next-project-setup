@@ -14,7 +14,7 @@ Install the Node version listed in `.nvmrc` (use a Node version manager such as 
 
 ## Vercel CLI
 
-- To install Vercel CLI use `npm install -g vercel`
+- To install Vercel CLI use `npm install -g vercel` or install loccaly with `yarn add vercel -D`
 - To connect a project use `vercel link` and configure credentials accordingly
 - Use `vercel env pull` to get the environment variables
 - Use `vercel dev` to deploy a local test server at [http://localhost:3000](http://localhost:3000)
