@@ -33,14 +33,7 @@ export default class MyDocument extends Document {
       <Html lang="nl">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="preload" href="/fonts/Inter-Thin.woff2" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Inter-ExtraLight.woff2" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Inter-Light.woff2" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Inter-Medium.woff2" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Inter-SemiBold.woff2" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/Inter-Black.woff2" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/Inter.var.woff2" as="font" crossOrigin="" />
         </Head>
         <body>
           <Main />
