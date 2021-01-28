@@ -2,8 +2,9 @@ import React from "react"
 import { RouterContext } from "next/dist/next-server/lib/router-context"
 import * as nextImage from "next/image"
 
+import "normalize.css/normalize.css"
 import "../fonts.css"
-import GlobalStyle from "../styles/index"
+import "../styles/global.scss"
 
 export const decorators = [
   Story => (
@@ -14,7 +15,6 @@ export const decorators = [
         prefetch: () => Promise.resolve(),
       }}
     >
-      <GlobalStyle />
       <Story />
     </RouterContext.Provider>
   ),

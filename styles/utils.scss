@@ -1,0 +1,13 @@
+a,
+button {
+  color: var(--color-black);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+img,
+svg {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

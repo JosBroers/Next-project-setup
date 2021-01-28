@@ -1,36 +1,14 @@
 import React from "react"
-import styled from "styled-components"
-import { NextSeo } from "next-seo"
+import Head from "next/head"
 
-const Container = styled.div`
-  width: calc(100% - 40px);
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 0 20px;
+import Container from "../components/container"
 
-  h1 {
-    font-size: 35px;
-    line-height: 1.5em;
-  }
-`
-
-export default function Home() {
-  const title = "Page not found"
-  const image = "/images/thumbnail.png"
-
+export default function Error() {
   return (
     <>
-      <NextSeo
-        title={title}
-        openGraph={{
-          title: title,
-          images: [
-            {
-              url: image,
-            },
-          ],
-        }}
-      />
+      <Head>
+        <title>Page not found | Next Project Setup</title>
+      </Head>
       <Container>
         <h1>Page not found!</h1>
         <p>
