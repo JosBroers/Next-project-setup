@@ -1,0 +1,15 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+html,
+body {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@import "./typography.scss";
+@import "./utils.scss";
