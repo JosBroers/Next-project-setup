@@ -7,14 +7,16 @@ Install the Node version listed in `.nvmrc` (use a Node version manager such as 
 ## Scripts
 
 - Use `yarn` or `yarn install` to install the dependencies
-- Use `yarn dev`, `next` or `next dev` to start a local dev server at [http://localhost:3000](http://localhost:3000)
-- To build the application for production, use `yarn build` or `next build`
-- To start a production server, use `yarn start` or `next start`
+- Use `yarn dev` to start a local dev server at [http://localhost:3000](http://localhost:3000)
+- To build the application for production, use `yarn build`
+- To start a production server, use `yarn start`
 - To export application as static HTML, use `next build && next export`
+- For checking on unused imports, use `yarn find:unused`
+- For analyzing the chunks and modules, use `yarn analyze`
 
 ## Vercel CLI
 
-- To install Vercel CLI use `npm install -g vercel` or install loccaly with `yarn add vercel -D`
+- To install Vercel CLI use `npm install -g vercel`
 - To connect a project use `vercel link` and configure credentials accordingly
 - Use `vercel env pull` to get the environment variables
 - Use `vercel dev` to deploy a local test server at [http://localhost:3000](http://localhost:3000)
