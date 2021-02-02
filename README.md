@@ -22,3 +22,8 @@ Install the Node version listed in `.nvmrc` (use a Node version manager such as 
 - Use `vercel dev` to deploy a local test server at [http://localhost:3000](http://localhost:3000)
 - Use `vercel` to deploy a preview build
 - Use `vercel --prod` to deploy a production build
+
+## Depcheck
+
+- To install Depcheck use `npm install -g depcheck typescript node-sass`
+- Use `depcheck` to analyze the dependencies in the project
