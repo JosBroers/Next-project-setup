@@ -9,6 +9,11 @@ export default function Home(): JSX.Element {
     <>
       <Head>
         <title>Homepage | Next Project Setup</title>
+        <meta
+          name="description"
+          content="This repository is a setup project which can be used for starting an application with
+          Next.js."
+        />
       </Head>
       <Container>
         <h1>Next.js Project Setup</h1>
