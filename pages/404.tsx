@@ -1,9 +1,10 @@
 import React from "react"
 import Head from "next/head"
 
+// Component Imports
 import Container from "../components/container"
 
-export default function Error() {
+export default function Error(): JSX.Element {
   return (
     <>
       <Head>
