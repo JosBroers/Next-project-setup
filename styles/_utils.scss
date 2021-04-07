@@ -1,0 +1,7 @@
+/* Disable scrolling */
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+}
