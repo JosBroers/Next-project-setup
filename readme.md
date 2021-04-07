@@ -2,11 +2,13 @@
 
 ## Prerequisites
 
-Install the Node version listed in `.nvmrc` (use a Node version manager such as [NVM for Mac](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows))
+Install the Node version listed in `.nvmrc` (use a Node version manager such
+as [NVM for Mac](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows))
 
 ## Scripts
 
 - Use `yarn` or `yarn install` to install the dependencies
+- Use `yarn ci` to remove the file `yarn.lock` and the directory `node_modules` and reinstall the dependencies
 - Use `yarn dev` to start a local dev server at [http://localhost:3000](http://localhost:3000)
 - To build the application for production, use `yarn build`
 - To start a production server, use `yarn start`
@@ -25,5 +27,5 @@ Install the Node version listed in `.nvmrc` (use a Node version manager such as 
 
 ## Depcheck
 
-- To install Depcheck use `npm install -g depcheck typescript node-sass`
+- To install Depcheck use `npm install -g depcheck typescript`
 - Use `depcheck` to analyze the dependencies in the project

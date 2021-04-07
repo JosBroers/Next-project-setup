@@ -8,13 +8,13 @@ export default function Error() {
 	return (
 		<>
 			<Head>
-				<title>Page not found | Next Project Setup</title>
+				<title>Internal server error | Next Project Setup</title>
 			</Head>
 			<Container>
-				<h1>Page not found!</h1>
+				<h1>Internal server error!</h1>
 				<p>
-					It seems that the page you are trying to visit does not exist (anymore). Click on the
-					button to go back to the homepage.
+					It seems that the server you are trying to reach has a problem. Please reload the page or
+					try again later.
 				</p>
 			</Container>
 		</>

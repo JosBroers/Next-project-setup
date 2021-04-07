@@ -1,0 +1,29 @@
+/* Body */
+body {
+  font-family: var(--font-inter);
+  font-size: rem-calc(16px);
+  line-height: 1.5;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: var(--font-inter-var);
+  }
+}
+
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  hyphens: auto;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: rem-calc(30px);
+  line-height: 1.5;
+}
