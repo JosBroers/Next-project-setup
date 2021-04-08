@@ -1,12 +1,8 @@
-/* Preflight */
-@import "./preflight";
+@import "modules/preflight";
 
-/* Base imports */
+/* Base */
 @import "./variables";
 @import "./fonts";
 @import "./typography";
-@import "./base.scss";
-@import "./utils.scss";
-
-/* Component imports */
-@import "~flexboxgrid/css/flexboxgrid.css";
+@import "./base";
+@import "./utils";

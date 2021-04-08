@@ -1,58 +1,29 @@
 {
   "compilerOptions": {
-	"target": "ES2017",
-	"lib": [
-	  "es6",
-	  "dom",
-	  "dom.iterable",
-	  "esnext"
-	],
-	"allowJs": true,
-	"skipLibCheck": true,
-	"strict": false,
-	"forceConsistentCasingInFileNames": true,
-	"noEmit": true,
-	"esModuleInterop": true,
-	"module": "ESNEXT",
-	"moduleResolution": "node",
-	"resolveJsonModule": true,
-	"isolatedModules": true,
-	"jsx": "preserve",
-	"baseUrl": ".",
-	"paths": {
-	  "@api/*": [
-		"./pages/api/*"
-	  ],
-	  "@queries/*": [
-		"./queries/*"
-	  ],
-	  "@lib/*": [
-		"./lib/*"
-	  ],
-	  "@components/*": [
-		"./components/*"
-	  ],
-	  "@public/*": [
-		"./public/*"
-	  ],
-	  "@utils/*": [
-		"./utils/*"
-	  ],
-	  "@styles/*": [
-		"./styles/*"
-	  ],
-	  "@icons/*": [
-		"./icons/*"
-	  ]
-	}
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
   },
-  "exclude": [
-	"node_modules"
-  ],
   "include": [
-	"**/*.ts",
-	"**/*.tsx",
-	"next-env.d.ts",
-	"next.config.js"
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
