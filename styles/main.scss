@@ -1,5 +1,5 @@
 /* Preflight */
-@import "~modern-normalize/modern-normalize.css";
+@import "./preflight";
 
 /* Base imports */
 @import "./variables";
@@ -9,3 +9,4 @@
 @import "./utils.scss";
 
 /* Component imports */
+@import "~flexboxgrid/css/flexboxgrid.css";

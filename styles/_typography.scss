@@ -26,4 +26,16 @@ h6 {
 h1 {
   font-size: rem-calc(30px);
   line-height: 1.5;
+  margin: rem-calc(30px 0);
+}
+
+/* Paragraph */
+p {
+  margin-bottom: rem-calc(20px);
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-inline-start: rem-calc(20px);
 }

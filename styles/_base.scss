@@ -20,6 +20,10 @@ button {
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
   user-select: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* Images */
