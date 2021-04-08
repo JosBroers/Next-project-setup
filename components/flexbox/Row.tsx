@@ -4,7 +4,7 @@ import React from "react"
 import styles from "../../styles/components/flexbox/row.module.scss"
 
 export default function Row(props: { children: React.ReactNode }) {
-  const { children } = props
+	const { children } = props
 
-  return <div className={styles.row}>{children}</div>
+	return <div className={styles.row}>{children}</div>
 }
