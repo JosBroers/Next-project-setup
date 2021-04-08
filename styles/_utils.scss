@@ -8,20 +8,20 @@
 
 /* Line clamping */
 .line-clamp {
-  display: -webkit-box;
-  overflow: hidden;
   -webkit-box-orient: vertical;
+  display: -webkit-box;
   -webkit-line-clamp: 1;
-  
+  overflow: hidden;
+
   &--2 {
-    -webkit-line-clamp: 2;
+	-webkit-line-clamp: 2;
   }
-  
+
   &--3 {
-    -webkit-line-clamp: 3;
+	-webkit-line-clamp: 3;
   }
-  
+
   &--4 {
-    -webkit-line-clamp: 4;
+	-webkit-line-clamp: 4;
   }
 }
