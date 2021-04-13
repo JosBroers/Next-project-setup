@@ -5,14 +5,14 @@ import Head from "next/head"
 // CSS
 import "../styles/main.scss"
 
-export default function MyApp({ Component, pageProps }: AppProps) {
-	return (
-		<>
-			<Head>
-				<link rel="shortcut icon" href="/images/favicon.png" />
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-			</Head>
-			<Component {...pageProps} />
-		</>
-	)
-}
+const MyApp = ({ Component, pageProps }: AppProps) => (
+	<>
+		<Head>
+			<link rel="shortcut icon" href="/images/favicon.png" />
+			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		</Head>
+		<Component {...pageProps} />
+	</>
+)
+
+export default MyApp
