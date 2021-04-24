@@ -1,16 +1,11 @@
-/* Disable scrolling */
-.no-scroll {
-	height: 100vh;
-	overflow: hidden;
-	touch-action: none;
-}
-
-/* Line Clamping */
 .line-clamp {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	-webkit-line-clamp: 1;
+
+	&--1 {
+		-webkit-line-clamp: 1;
+	}
 
 	&--2 {
 		-webkit-line-clamp: 2;
