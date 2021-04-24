@@ -5,18 +5,18 @@ import styles from "../styles/components/line-clamp.module.scss"
 
 interface LineClampProps {
 	children: React.ReactNode
-	Component: string
 	amount: number
 }
 
 const LineClamp = (Props: LineClampProps) => {
 	const { children, amount } = Props
-	const cssClass = `line-clamp--${amount}`
+	const clampAmount = amount ? amount : 1
+	const cssClass = `line-clamp--${clampAmount}`
 
 	return (
-		<Props.Component className={`${styles["line-clamp"]} ${styles[cssClass]}`}>
+		<div className={`${styles["line-clamp"]} ${styles[cssClass]}`}>
 			{children}
-		</Props.Component>
+		</div>
 	)
 }
 
