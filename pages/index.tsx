@@ -4,7 +4,6 @@ import { Flex, Box } from "reflexbox/styled-components"
 
 // Component imports
 import Container from "../components/Container"
-import LineClamp from "../components/LineClamp"
 
 const Home = () => (
 	<>
@@ -20,10 +19,10 @@ const Home = () => (
 			<Flex>
 				<Box width={[1, 1, 1, 1, 8 / 12]}>
 					<h1>Next.js Project Setup</h1>
-					<LineClamp component="p" amount={1}>
+					<p>
 						This repository is a setup project which can be used for starting an application with
 						Next.js. This template uses:
-					</LineClamp>
+					</p>
 					<ul>
 						<li>
 							<a
