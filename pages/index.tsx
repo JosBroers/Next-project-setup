@@ -1,9 +1,9 @@
 import React from "react"
 import Head from "next/head"
+import { Flex, Box } from "reflexbox/styled-components"
 
-// Component
+// Component imports
 import Container from "../components/Container"
-import { Col, Row } from "../components/flexbox"
 
 const Home = () => (
 	<>
@@ -16,34 +16,14 @@ const Home = () => (
 			/>
 		</Head>
 		<Container>
-			<Row>
-				<Col>
+			<Flex>
+				<Box width={[1, 1, 1, 1, 8 / 12]}>
 					<h1>Next.js Project Setup</h1>
 					<p>
 						This repository is a setup project which can be used for starting an application with
 						Next.js. This template uses:
 					</p>
 					<ul>
-						<li>
-							<a
-								href="https://www.typescriptlang.org/"
-								title="TypeScript"
-								target="_blank"
-								rel="noreferrer noopener"
-							>
-								TypeScript
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://sass-lang.com/"
-								title="SCSS"
-								target="_blank"
-								rel="noreferrer noopener"
-							>
-								SCSS
-							</a>
-						</li>
 						<li>
 							<a
 								href="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
@@ -66,12 +46,11 @@ const Home = () => (
 						</li>
 						<li>
 							<a
-								href="https://stylelint.io/"
-								title="Stylelint"
+								href="https://get.foundation/sites/docs/sass-functions.html#rem-calc"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								Stylelint
+								Foundation rem-calc() function
 							</a>
 						</li>
 						<li>
@@ -86,11 +65,42 @@ const Home = () => (
 						</li>
 						<li>
 							<a
-								href="https://get.foundation/sites/docs/sass-functions.html#rem-calc"
+								href="https://rebassjs.org/reflexbox/"
+								title="Reflexbox"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								Foundation rem-calc() function
+								Reflexbox
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://sass-lang.com/"
+								title="SCSS"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								SCSS
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://styled-components.com/"
+								title="Styled Components"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								Styled Components
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://stylelint.io/"
+								title="Stylelint"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								Stylelint
 							</a>
 						</li>
 						<li>
@@ -103,9 +113,19 @@ const Home = () => (
 								Tailwind Preflight
 							</a>
 						</li>
+						<li>
+							<a
+								href="https://www.typescriptlang.org/"
+								title="TypeScript"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
+								TypeScript
+							</a>
+						</li>
 					</ul>
-				</Col>
-			</Row>
+				</Box>
+			</Flex>
 		</Container>
 	</>
 )

@@ -4,7 +4,17 @@
 	--color-white: hsl(0, 0%, 100%);
 	--color-blue: rgb(6, 69, 173);
 
-	/* Font related */
+	/* Font */
 	--font-inter: "Inter", "sans-serif";
 	--font-inter-var: "Inter var", "sans-serif";
+	--font-size: 16px;
+	--font-line-height: 1.5;
+
+	/* Grid */
+	--grid-max-width: 1060px;
+	--grid-padding: 0 20px;
+	--grid-margin: 0 auto;
+
+	/* Breakpoints */
+	--screen-md: ;
 }

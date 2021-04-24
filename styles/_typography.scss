@@ -1,8 +1,8 @@
 /* Body */
 body {
 	font-family: var(--font-inter);
-	font-size: rem-calc(16px);
-	line-height: 1.5;
+	font-size: var(--font-size-base);
+	line-height: var(--font-line-height);
 }
 
 @supports (font-variation-settings: normal) {
