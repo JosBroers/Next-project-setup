@@ -16,5 +16,8 @@
 	--grid-margin: 0 auto;
 
 	/* Breakpoints */
-	--screen-md: ;
+	--screen-sm: 576px;
+	--screen-md: 768px;
+	--screen-lg: 992px;
+	--screen-xl: 1024px;
 }
