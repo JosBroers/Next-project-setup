@@ -38,6 +38,7 @@
 		],
 		"plugin/no-low-performance-animation-properties": true,
 		"plugin/stylelint-selector-no-empty": true,
+		"property-no-vendor-prefix": false,
 		"color-format/format": {
 			"format": "rgb"
 		}
