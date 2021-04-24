@@ -1,9 +1,23 @@
 :root {
-  /* Colors */
-  --color-black: #000;
-  --color-white: #fff;
+	/* Colors */
+	--color-black: hsl(0, 0%, 0%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-blue: rgb(6, 69, 173);
 
-  /* Font related */
-  --font-inter: "Inter", "sans-serif";
-  --font-inter-var: "Inter var", "sans-serif";
+	/* Font */
+	--font-inter: "Inter", "sans-serif";
+	--font-inter-var: "Inter var", "sans-serif";
+	--font-size: 16px;
+	--font-line-height: 1.5;
+
+	/* Grid */
+	--grid-max-width: 1060px;
+	--grid-padding: 0 20px;
+	--grid-margin: 0 auto;
+
+	/* Breakpoints */
+	--screen-sm: 576px;
+	--screen-md: 768px;
+	--screen-lg: 992px;
+	--screen-xl: 1024px;
 }

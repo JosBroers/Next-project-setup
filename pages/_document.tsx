@@ -1,7 +1,7 @@
 import React from "react"
-import Document, {Head, Html, Main, NextScript} from "next/document"
+import Document, { Head, Html, Main, NextScript } from "next/document"
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="nl">
@@ -11,10 +11,12 @@ export default class MyDocument extends Document {
 					<link rel="preload" href="/fonts/Inter-Italic.var.woff2" as="font" crossOrigin="" />
 				</Head>
 				<body>
-				<Main />
-				<NextScript />
+					<Main />
+					<NextScript />
 				</body>
 			</Html>
 		)
 	}
 }
+
+export default MyDocument
