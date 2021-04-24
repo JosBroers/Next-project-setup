@@ -1,27 +1,26 @@
 /* Disable scrolling */
 .no-scroll {
-  height: 100vh;
-  overflow: hidden;
-  -ms-touch-action: none;
-  touch-action: none;
+	height: 100vh;
+	overflow: hidden;
+	touch-action: none;
 }
 
 /* Line clamping */
 .line-clamp {
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
+	box-orient: vertical;
+	display: box;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
 
-  &--2 {
-	-webkit-line-clamp: 2;
-  }
+	&--2 {
+		-webkit-line-clamp: 2;
+	}
 
-  &--3 {
-	-webkit-line-clamp: 3;
-  }
+	&--3 {
+		-webkit-line-clamp: 3;
+	}
 
-  &--4 {
-	-webkit-line-clamp: 4;
-  }
+	&--4 {
+		-webkit-line-clamp: 4;
+	}
 }

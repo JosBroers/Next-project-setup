@@ -1,25 +1,3 @@
 {
-  "presets": [
-    "next/babel"
-  ],
-  "plugins": [
-    [
-      "module-resolver",
-      {
-        "root": [
-          "./"
-        ],
-        "alias": {
-          "@components": "./components",
-          "@api": "./pages/api",
-          "@utils": "./utils",
-          "@public": "./public",
-          "@queries": "./queries",
-          "@styles": "./styles",
-          "@icons": "./icons",
-          "@lib": "./lib"
-        }
-      }
-    ]
-  ]
+	"presets": ["next/babel"]
 }

@@ -1,11 +1,8 @@
-/* Preflight */
-@import "~modern-normalize/modern-normalize.css";
+@import "modules/preflight";
 
-/* Base imports */
+/* Base */
 @import "./variables";
 @import "./fonts";
 @import "./typography";
-@import "./base.scss";
-@import "./utils.scss";
-
-/* Component imports */
+@import "./base";
+@import "./utils";

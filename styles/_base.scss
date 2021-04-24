@@ -1,30 +1,33 @@
 /* HTML & Body */
 html,
 body {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 /* Psuedo-elements */
 ::selection {
-  background-color: var(--color-black);
-  color: var(--color-white);
+	background-color: var(--color-black);
+	color: var(--color-white);
 }
 
 /* Buttons */
-a,
-button {
-  color: var(--color-black);
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
-  user-select: none;
+a {
+	color: var(--color-blue);
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+	user-select: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 /* Images */
 img,
 svg {
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
 }
