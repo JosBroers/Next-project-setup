@@ -51,7 +51,7 @@
 		"stylelint-color-format": "^1.1.0",
 		"stylelint-config-prettier": "^8.0.2",
 		"stylelint-config-sass-guidelines": "^8.0.0",
-		"stylelint-config-standard": "^21.0.0",
+		"stylelint-config-standard": "^22.0.0",
 		"stylelint-declaration-use-variable": "^1.7.2",
 		"stylelint-high-performance-animation": "^1.5.2",
 		"stylelint-order": "^4.1.0",
