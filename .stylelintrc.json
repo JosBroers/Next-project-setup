@@ -1,0 +1,36 @@
+{
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-config-sass-guidelines",
+		"stylelint-config-prettier"
+	],
+	"plugins": [
+		"stylelint-order",
+		"stylelint-selector-bem-pattern",
+		"stylelint-color-format",
+		"stylelint-selector-no-empty"
+	],
+	"rules": {
+		"order/order": ["custom-properties", "declarations"],
+		"indentation": "tab",
+		"selector-max-id": null,
+		"plugin/selector-bem-pattern": {
+			"componentName": "[A-Z]+",
+			"componentSelectors": {
+				"initial": "^\\.{componentName}(?:-[a-z]+)?$",
+				"combined": "^\\.combined-{componentName}-[a-z]+$"
+			},
+			"utilitySelectors": "^\\.util-[a-z]+$"
+		},
+		"plugin/stylelint-selector-no-empty": true,
+		"value-no-vendor-prefix": null,
+		"property-no-vendor-prefix": null,
+		"no-descending-specificity": null,
+		"selector-no-qualifying-type": null,
+		"no-duplicate-selectors": null,
+		"scss/at-function-pattern": null,
+		"color-format/format": {
+			"format": "rgb"
+		}
+	}
+}
