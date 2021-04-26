@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useEffect } from "react"
 import type { AppProps } from "next/app"
 import Head from "next/head"
 import { ThemeProvider } from "styled-components"
+import NProgress from "nprogress"
 
 // CSS
 import "../styles/main.scss"
@@ -12,6 +13,21 @@ const theme = {
 
 const MyApp = ({ Component, pageProps, router }: AppProps) => {
 	const url = process.env.NEXT_PUBLIC_SITE_URL + router.pathname
+
+	useEffect(() => {
+		const routeChangeStart = () => NProgress.start()
+		const routeChangeComplete = () => NProgress.done()
+
+		router.events.on("routeChangeStart", routeChangeStart)
+		router.events.on("routeChangeComplete", routeChangeComplete)
+		router.events.on("routeChangeError", routeChangeComplete)
+
+		return () => {
+			router.events.off("routeChangeStart", routeChangeStart)
+			router.events.off("routeChangeComplete", routeChangeComplete)
+			router.events.off("routeChangeError", routeChangeComplete)
+		}
+	}, [])
 
 	return (
 		<ThemeProvider theme={theme}>
