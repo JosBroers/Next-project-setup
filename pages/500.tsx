@@ -1,6 +1,7 @@
 import React from "react"
 import Head from "next/head"
 import { Flex, Box } from "reflexbox/styled-components"
+import Link from "next/link"
 
 // Component imports
 import Container from "../components/Container"
@@ -18,6 +19,9 @@ const Error = () => (
 						It seems that the server you are trying to reach has a problem. Please reload the page
 						or try again later.
 					</p>
+					<Link href="/">
+						<a title="Homepage">Go back to home</a>
+					</Link>
 				</Box>
 			</Flex>
 		</Container>

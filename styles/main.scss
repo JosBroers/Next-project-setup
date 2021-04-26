@@ -1,4 +1,5 @@
-@import "modules/preflight";
+/* Preflight */
+@import "./preflight";
 
 /* Base */
 @import "./variables";
@@ -6,3 +7,6 @@
 @import "./typography";
 @import "./base";
 @import "./utils";
+
+/* Modules */
+@import "./modules/nprogress";
