@@ -3,6 +3,7 @@ import { Flex, Box } from "reflexbox/styled-components"
 import Link from "next/link"
 import Cookies from "universal-cookie"
 import dayjs from "dayjs"
+import Router from "next/router"
 
 // CSS imports
 import styles from "../styles/components/cookie-notice.module.scss"
@@ -12,17 +13,10 @@ const CookieNotice = () => {
 	const cookies = new Cookies()
 	const expire = dayjs().add(1, "year").format()
 
-	function sleep(time) {
-		return new Promise(resolve => setTimeout(resolve, time))
-	}
-
 	function setCookies() {
 		setHideCookieBanner(true)
 		cookies.set("cookie-consent", "allowed", { path: "/", expires: new Date(expire) })
-
-		sleep(250).then(() => {
-			document.getElementById("cookieNotice").remove()
-		})
+		Router.reload(window.location.pathname)
 	}
 
 	useEffect(() => {
@@ -30,17 +24,14 @@ const CookieNotice = () => {
 			setHideCookieBanner(true)
 		} else {
 			setHideCookieBanner(false)
-			document.getElementById("cookieNotice").style.display = "block"
 		}
 	})
 
 	return (
 		<div
-			id="cookieNotice"
 			className={styles["cookie-notice__wrapper"]}
 			style={{
-				opacity: HideCookieBanner ? 0 : 1,
-				visibility: HideCookieBanner ? "hidden" : "visible",
+				display: HideCookieBanner ? "none" : "block",
 			}}
 		>
 			<div className={styles["cookie-notice"]}>

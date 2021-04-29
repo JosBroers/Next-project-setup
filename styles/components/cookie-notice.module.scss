@@ -11,13 +11,11 @@
 		left: 0;
 		margin: 0 auto;
 		max-width: rem-calc(645px);
-		opacity: 0;
 		padding: var(--grid-padding);
 		position: fixed;
 		right: 0;
 		transition: opacity var(--transition-duration) ease-out,
 			visibility var(--transition-duration) ease-out;
-		visibility: hidden;
 		width: 100%;
 		z-index: 9999;
 	}
