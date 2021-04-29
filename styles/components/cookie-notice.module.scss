@@ -14,8 +14,6 @@
 		padding: var(--grid-padding);
 		position: fixed;
 		right: 0;
-		transition: opacity var(--transition-duration) ease-out,
-			visibility var(--transition-duration) ease-out;
 		width: 100%;
 		z-index: 9999;
 	}
