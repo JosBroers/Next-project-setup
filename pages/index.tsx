@@ -43,12 +43,42 @@ const Home = () => {
 						<ul>
 							<li>
 								<a
+									href="https://www.npmjs.com/package/universal-cookie"
+									title="Universal cookies"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Universal cookies
+								</a>
+							</li>
+							<li>
+								<a
 									href="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
 									title="Component-Level CSS"
 									target="_blank"
 									rel="noreferrer noopener"
 								>
 									CSS Modules
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://day.js.org/"
+									title="Day.js"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Day.js
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://tagmanager.google.com/"
+									title="Google Tag Manager"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Google Tag Manager
 								</a>
 							</li>
 							<li>
