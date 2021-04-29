@@ -3,7 +3,7 @@
 		"browser": true,
 		"es2021": true
 	},
-	"extends": ["plugin:react/recommended", "airbnb", "prettier"],
+	"extends": ["plugin:react/recommended", "airbnb", "prettier", "eslint"],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -24,7 +24,13 @@
 		"no-tabs": ["error", { "allowIndentationTabs": true }],
 		"prettier/prettier": "error",
 		"no-use-before-define": "off",
-		"react/jsx-props-no-spreading": "off"
+		"react/jsx-props-no-spreading": "off",
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"components": ["Link"]
+			}
+		]
 	},
 	"settings": {
 		"import/resolver": { "node": { "extensions": [".js", ".ts", ".tsx"] } },

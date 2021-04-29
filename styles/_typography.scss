@@ -37,5 +37,6 @@ p {
 /* List */
 ul {
 	list-style-type: disc;
+	margin-bottom: rem-calc(20px);
 	padding-inline-start: rem-calc(20px);
 }

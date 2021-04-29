@@ -43,12 +43,42 @@ const Home = () => {
 						<ul>
 							<li>
 								<a
+									href="https://www.npmjs.com/package/universal-cookie"
+									title="Universal cookies"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Universal cookies
+								</a>
+							</li>
+							<li>
+								<a
 									href="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
 									title="Component-Level CSS"
 									target="_blank"
 									rel="noreferrer noopener"
 								>
 									CSS Modules
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://day.js.org/"
+									title="Day.js"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Day.js
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://tagmanager.google.com/"
+									title="Google Tag Manager"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									Google Tag Manager
 								</a>
 							</li>
 							<li>
@@ -65,9 +95,30 @@ const Home = () => {
 								<a
 									href="https://get.foundation/sites/docs/sass-functions.html#rem-calc"
 									target="_blank"
+									title="Foundation rem-calc() function"
 									rel="noreferrer noopener"
 								>
 									Foundation rem-calc() function
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://imagekit.io/"
+									target="_blank"
+									title="Imagekit.io"
+									rel="noreferrer noopener"
+								>
+									Imagekit.io
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://ricostacruz.com/nprogress/"
+									target="_blank"
+									title="NProgress.js"
+									rel="noreferrer noopener"
+								>
+									NProgress.js
 								</a>
 							</li>
 							<li>

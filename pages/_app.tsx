@@ -4,9 +4,14 @@ import Head from "next/head"
 import { ThemeProvider } from "styled-components"
 import NProgress from "nprogress"
 
-// CSS
+// CSS imports
 import "../styles/main.scss"
 
+// Component imports
+import CookieNotice from "../components/CookieNotice"
+import GoogleTagManager from "../components/GoogleTagManager"
+
+// Theme
 const theme = {
 	breakpoints: ["576px", "768px", "992px", "1024px"],
 }
@@ -30,23 +35,26 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 	}, [])
 
 	return (
-		<ThemeProvider theme={theme}>
-			<Head>
-				<link
-					rel="shortcut icon"
-					type="image/png"
-					href="https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png"
-				/>
-				<link rel="canonical" href={url} />
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<meta property="og:url" content={url} />
-				<meta name="robots" content="index, follow" />
-				<meta property="og:type" content="website" />
-				<meta property="og:site_name" content={process.env.NEXT_PUBLIC_SITE_NAME} />
-				<meta name="theme-color" content="#000" />
-			</Head>
-			<Component {...pageProps} />
-		</ThemeProvider>
+		<GoogleTagManager>
+			<ThemeProvider theme={theme}>
+				<Head>
+					<link
+						rel="shortcut icon"
+						type="image/png"
+						href="https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png"
+					/>
+					<link rel="canonical" href={url} />
+					<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+					<meta property="og:url" content={url} />
+					<meta name="robots" content="index, follow" />
+					<meta property="og:type" content="website" />
+					<meta property="og:site_name" content={process.env.NEXT_PUBLIC_SITE_NAME} />
+					<meta name="theme-color" content="#000" />
+				</Head>
+				<CookieNotice />
+				<Component {...pageProps} />
+			</ThemeProvider>
+		</GoogleTagManager>
 	)
 }
 
