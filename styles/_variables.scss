@@ -1,7 +1,8 @@
 :root {
 	/* Colors */
-	--color-black: hsl(0, 0%, 0%);
-	--color-white: hsl(0, 0%, 100%);
+	--color-black: rgb(0, 0, 0);
+	--color-white: rgb(255, 255, 255);
+	--color-gray: rgb(100, 100, 100);
 	--color-blue: rgb(6, 69, 173);
 	--color-blue-light: rgb(3, 158, 227);
 
@@ -21,4 +22,8 @@
 	--screen-md: 768px;
 	--screen-lg: 992px;
 	--screen-xl: 1024px;
+
+	/* Other */
+	--border-radius: 5px;
+	--transition-duration: 250ms;
 }

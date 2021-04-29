@@ -29,6 +29,7 @@
 		"selector-no-qualifying-type": null,
 		"no-duplicate-selectors": null,
 		"scss/at-function-pattern": null,
+		"max-nesting-depth": 4,
 		"color-format/format": {
 			"format": "rgb"
 		}
