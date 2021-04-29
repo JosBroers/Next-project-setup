@@ -65,9 +65,30 @@ const Home = () => {
 								<a
 									href="https://get.foundation/sites/docs/sass-functions.html#rem-calc"
 									target="_blank"
+									title="Foundation rem-calc() function"
 									rel="noreferrer noopener"
 								>
 									Foundation rem-calc() function
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://imagekit.io/"
+									target="_blank"
+									title="Imagekit.io"
+									rel="noreferrer noopener"
+								>
+									Imagekit.io
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://ricostacruz.com/nprogress/"
+									target="_blank"
+									title="NProgress.js"
+									rel="noreferrer noopener"
+								>
+									NProgress.js
 								</a>
 							</li>
 							<li>

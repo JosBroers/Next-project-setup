@@ -5,6 +5,18 @@
 Install the Node version listed in `.nvmrc` (use a Node version manager such
 as [NVM for Mac](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows))
 
+## Environment Variables
+
+In order to use Google Tag Manager and set the SEO defaults follow these steps:
+
+1. Add the following three variables to Vercel:
+   - `NEXT_PUBLIC_GTM` (Your Google Tag Manager ID, e.g. `GTM-ABCDE1F`)
+   - `NEXT_PUBLIC_SITE_NAME` (Your site name, e.g. `Next.js Project Setup`)
+   - `NEXT_PUBLIC_SITE_URL` (Your site URL, e.g. `https://next-project-setup.jobrodo.nl/`)
+2. Install the Vercel CLI with `npm install -g vercel`
+3. Connect your project to vercel with `vercel link` and configure credentials accordingly
+4. Pull the environment variables with `vercel env pull`
+
 ## Scripts
 
 - Use `yarn` or `yarn install` to install the dependencies
