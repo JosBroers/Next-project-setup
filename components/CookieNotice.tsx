@@ -16,7 +16,7 @@ const CookieNotice = () => {
 	function setCookies() {
 		setHideCookieBanner(true)
 		cookies.set("cookie-consent", "allowed", { path: "/", expires: new Date(expire) })
-		Router.reload(window.location.pathname)
+		Router.reload()
 	}
 
 	useEffect(() => {
