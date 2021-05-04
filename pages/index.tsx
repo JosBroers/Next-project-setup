@@ -6,6 +6,9 @@ import { Flex, Box } from "reflexbox/styled-components"
 import Container from "../components/Container"
 import Header from "../components/Header"
 
+// Icon imports
+import { GithubIcon } from "../icons"
+
 const Home = () => {
 	const title = "Homepage | Next Project Setup"
 	const description =
@@ -30,9 +33,17 @@ const Home = () => {
 				<meta name="twitter:image" content={image} />
 			</Head>
 			<Container>
-				<Box width={[1, 1, 1, 1, 8 / 12]}>
+				<Flex justifyContent="space-between" alignItems="center">
 					<h1>Next.js Project Setup</h1>
-				</Box>
+					<a
+						href="https://github.com/JosBroers/next-project-setup"
+						title="GitHub"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<GithubIcon height={25} width={25} />
+					</a>
+				</Flex>
 				<Header />
 				<Flex>
 					<Box width={[1, 1, 1, 1, 8 / 12]}>
@@ -43,31 +54,16 @@ const Home = () => {
 						<ul>
 							<li>
 								<a
-									href="https://www.npmjs.com/package/universal-cookie"
-									title="Universal cookies"
-									target="_blank"
-									rel="noreferrer noopener"
-								>
-									Universal cookies
-								</a>
-							</li>
-							<li>
-								<a
 									href="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
 									title="Component-Level CSS"
 									target="_blank"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									CSS Modules
 								</a>
 							</li>
 							<li>
-								<a
-									href="https://day.js.org/"
-									title="Day.js"
-									target="_blank"
-									rel="noreferrer noopener"
-								>
+								<a href="https://day.js.org/" title="Day.js" target="_blank" rel="noreferrer">
 									Day.js
 								</a>
 							</li>
@@ -76,18 +72,13 @@ const Home = () => {
 									href="https://tagmanager.google.com/"
 									title="Google Tag Manager"
 									target="_blank"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									Google Tag Manager
 								</a>
 							</li>
 							<li>
-								<a
-									href="https://eslint.org/"
-									title="ESLint"
-									target="_blank"
-									rel="noreferrer noopener"
-								>
+								<a href="https://eslint.org/" title="ESLint" target="_blank" rel="noreferrer">
 									ESLint
 								</a>
 							</li>
@@ -96,18 +87,13 @@ const Home = () => {
 									href="https://get.foundation/sites/docs/sass-functions.html#rem-calc"
 									target="_blank"
 									title="Foundation rem-calc() function"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									Foundation rem-calc() function
 								</a>
 							</li>
 							<li>
-								<a
-									href="https://imagekit.io/"
-									target="_blank"
-									title="Imagekit.io"
-									rel="noreferrer noopener"
-								>
+								<a href="https://imagekit.io/" target="_blank" title="Imagekit.io" rel="noreferrer">
 									Imagekit.io
 								</a>
 							</li>
@@ -116,18 +102,13 @@ const Home = () => {
 									href="https://ricostacruz.com/nprogress/"
 									target="_blank"
 									title="NProgress.js"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									NProgress.js
 								</a>
 							</li>
 							<li>
-								<a
-									href="https://prettier.io/"
-									title="Prettier"
-									target="_blank"
-									rel="noreferrer noopener"
-								>
+								<a href="https://prettier.io/" title="Prettier" target="_blank" rel="noreferrer">
 									Prettier
 								</a>
 							</li>
@@ -136,18 +117,13 @@ const Home = () => {
 									href="https://rebassjs.org/reflexbox/"
 									title="Reflexbox"
 									target="_blank"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									Reflexbox
 								</a>
 							</li>
 							<li>
-								<a
-									href="https://sass-lang.com/"
-									title="SCSS"
-									target="_blank"
-									rel="noreferrer noopener"
-								>
+								<a href="https://sass-lang.com/" title="SCSS" target="_blank" rel="noreferrer">
 									SCSS
 								</a>
 							</li>
@@ -156,18 +132,13 @@ const Home = () => {
 									href="https://styled-components.com/"
 									title="Styled Components"
 									target="_blank"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									Styled Components
 								</a>
 							</li>
 							<li>
-								<a
-									href="https://stylelint.io/"
-									title="Stylelint"
-									target="_blank"
-									rel="noreferrer noopener"
-								>
+								<a href="https://stylelint.io/" title="Stylelint" target="_blank" rel="noreferrer">
 									Stylelint
 								</a>
 							</li>
@@ -176,7 +147,7 @@ const Home = () => {
 									href="https://tailwindcss.com/docs/preflight"
 									title="Tailwind Preflight"
 									target="_blank"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									Tailwind Preflight
 								</a>
@@ -186,9 +157,19 @@ const Home = () => {
 									href="https://www.typescriptlang.org/"
 									title="TypeScript"
 									target="_blank"
-									rel="noreferrer noopener"
+									rel="noreferrer"
 								>
 									TypeScript
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.npmjs.com/package/universal-cookie"
+									title="Universal cookies"
+									target="_blank"
+									rel="noreferrer"
+								>
+									Universal cookies
 								</a>
 							</li>
 						</ul>

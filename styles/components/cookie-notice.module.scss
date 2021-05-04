@@ -7,15 +7,27 @@
 
 	&__wrapper {
 		bottom: rem-calc(20px);
-		display: none;
 		left: 0;
 		margin: 0 auto;
 		max-width: rem-calc(645px);
+		opacity: 0;
 		padding: var(--grid-padding);
 		position: fixed;
 		right: 0;
+		transform: translateY(100%);
 		width: 100%;
 		z-index: 9999;
+
+		&--hidden {
+			display: none;
+		}
+
+		&--active {
+			animation-delay: 750ms;
+			animation-duration: 1000ms;
+			animation-fill-mode: forwards;
+			animation-name: cookieBar;
+		}
 	}
 
 	&__content {

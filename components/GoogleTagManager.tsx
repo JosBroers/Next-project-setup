@@ -6,9 +6,9 @@ const GoogleTagManager = ({ children }) => {
 	const router = useRouter()
 
 	useEffect(() => {
-		router.events.on("routeChangeComplete", gtm.pageview)
+		router.events.on("routeChangeComplete", gtm.Pageview)
 		return () => {
-			router.events.off("routeChangeComplete", gtm.pageview)
+			router.events.off("routeChangeComplete", gtm.Pageview)
 		}
 	}, [router.events])
 
