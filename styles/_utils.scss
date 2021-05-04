@@ -5,12 +5,17 @@
 	touch-action: none;
 }
 
+/* Margins & Paddings */
+.no-margin {
+	margin: 0;
+}
+
 /* Line Clamping */
 .line-clamp {
-	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
+	display: -webkit-box;
 	-webkit-line-clamp: 1;
+	overflow: hidden;
 
 	&--2 {
 		-webkit-line-clamp: 2;

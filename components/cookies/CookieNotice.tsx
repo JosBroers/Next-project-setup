@@ -6,7 +6,7 @@ import dayjs from "dayjs"
 import Router from "next/router"
 
 // CSS imports
-import styles from "../styles/components/cookie-notice.module.scss"
+import styles from "../../styles/components/cookies/cookie-notice.module.scss"
 
 const CookieNotice = () => {
 	const [HideCookieBanner, setHideCookieBanner] = useState(false)

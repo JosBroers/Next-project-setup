@@ -12,8 +12,8 @@ const Error = () => (
 			<title>Internal server error | Next Project Setup</title>
 		</Head>
 		<Container>
-			<Flex>
-				<Box width={[1, 1, 1, 1, 8 / 12]}>
+			<Flex height={"100vh"} justifyContent="center" alignItems="center">
+				<Box textAlign="center" width={[1, 1, 1, 1, 3 / 5]}>
 					<h1>Internal server error!</h1>
 					<p>
 						It seems that the server you are trying to reach has a problem. Please reload the page

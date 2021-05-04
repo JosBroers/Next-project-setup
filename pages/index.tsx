@@ -10,7 +10,7 @@ import Header from "../components/Header"
 import { GithubIcon } from "../icons"
 
 const Home = () => {
-	const title = "Homepage | Next Project Setup"
+	const title = "Next Project Setup: the advanced starter-kit for Next.js"
 	const description =
 		"This repository is a setup project which can be used for starting an application with Next.js."
 	const image = "https://ik.imagekit.io/jobrodo/jobrodo/thumbnail_JHMOxBSr9F4.png"
@@ -33,8 +33,13 @@ const Home = () => {
 				<meta name="twitter:image" content={image} />
 			</Head>
 			<Container>
-				<Flex justifyContent="space-between" alignItems="center">
-					<h1>Next.js Project Setup</h1>
+				<Flex
+					justifyContent="space-between"
+					alignItems="center"
+					width={[1, 1, 1, 1, 9 / 12]}
+					margin="50px auto 30px"
+				>
+					<h1 className="no-margin">Next.js Project Setup</h1>
 					<a
 						href="https://github.com/JosBroers/next-project-setup"
 						title="GitHub"
@@ -46,7 +51,7 @@ const Home = () => {
 				</Flex>
 				<Header />
 				<Flex>
-					<Box width={[1, 1, 1, 1, 8 / 12]}>
+					<Box width={[1, 1, 1, 1, 9 / 12]} margin="0 auto">
 						<p>
 							This repository is a setup project which can be used for starting an application with
 							Next.js. This template uses:
