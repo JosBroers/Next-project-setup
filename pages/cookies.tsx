@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "next/head"
 import Link from "next/link"
-import { Box, Flex } from "reflexbox/styled-components"
+import { Box } from "reflexbox/styled-components"
 
 // Component imports
 import Container from "../components/Container"
