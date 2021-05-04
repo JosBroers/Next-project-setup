@@ -13,11 +13,7 @@ const LineClamp = (Props: LineClampProps) => {
 	const clampAmount = amount ? amount : 1
 	const cssClass = `line-clamp--${clampAmount}`
 
-	return (
-		<div className={`${styles["line-clamp"]} ${styles[cssClass]}`}>
-			{children}
-		</div>
-	)
+	return <div className={`${styles["line-clamp"]} ${styles[cssClass]}`}>{children}</div>
 }
 
 export default LineClamp
