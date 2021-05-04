@@ -6,7 +6,7 @@ declare global {
 	}
 }
 
-export const pageview = url => {
+export const Pageview = url => {
 	window.dataLayer.push({
 		event: "pageview",
 		page: url,
