@@ -1,7 +1,7 @@
 import React from "react"
 
 interface IconProps {
-	fill?: ColorSpaceConversion
+	fill?: string
 	height: number
 	width: number
 }
