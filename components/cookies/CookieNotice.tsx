@@ -6,12 +6,15 @@ import dayjs from "dayjs"
 import Router from "next/router"
 
 // CSS imports
-import styles from "../styles/components/cookie-notice.module.scss"
+import styles from "../../styles/components/cookies/cookie-notice.module.scss"
 
 const CookieNotice = () => {
 	const [HideCookieBanner, setHideCookieBanner] = useState(false)
 	const cookies = new Cookies()
 	const expire = dayjs().add(1, "year").format()
+	const cookieClass = HideCookieBanner
+		? "cookie-notice__wrapper--hidden"
+		: "cookie-notice__wrapper--active"
 
 	function setCookies() {
 		setHideCookieBanner(true)
@@ -28,12 +31,7 @@ const CookieNotice = () => {
 	})
 
 	return (
-		<div
-			className={styles["cookie-notice__wrapper"]}
-			style={{
-				display: HideCookieBanner ? "none" : "block",
-			}}
-		>
+		<div className={`${styles["cookie-notice__wrapper"]} ${styles[cookieClass]}`}>
 			<div className={styles["cookie-notice"]}>
 				<Flex justifyContent="space-between" alignItems="center" flexWrap="wrap">
 					<Box className={styles["cookie-notice__content"]} width={[1, 1, 3 / 4]}>

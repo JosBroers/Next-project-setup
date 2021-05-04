@@ -1,0 +1,77 @@
+.cookie-block {
+	background-color: rgb(251, 251, 251);
+	border-left: 2px solid rgb(235, 235, 235);
+	border-right: 2px solid rgb(235, 235, 235);
+	padding: rem-calc(20px);
+	position: relative;
+
+	&__title {
+		margin-bottom: rem-calc(20px);
+	}
+
+	&__description {
+		margin-bottom: rem-calc(20px);
+	}
+
+	&__item {
+		align-items: center;
+		display: flex;
+		width: 100%;
+
+		&:not(&__item:last-of-type) {
+			margin-bottom: rem-calc(20px);
+		}
+	}
+
+	&__head {
+		font-weight: 700;
+		width: calc(100% / 3);
+	}
+
+	&__info {
+		font-size: rem-calc(14px);
+
+		code {
+			background: rgb(255, 255, 255);
+			border: 1px solid rgb(215, 215, 215);
+			border-radius: var(--border-radius);
+			padding: rem-calc(6px);
+		}
+	}
+
+	&:first-of-type {
+		border-top: 2px solid rgb(235, 235, 235);
+		border-top-left-radius: var(--border-radius);
+		border-top-right-radius: var(--border-radius);
+	}
+
+	&:not(&:first-of-type)::before {
+		border-top: 1px solid rgb(210, 210, 210);
+		content: "";
+		left: rem-calc(60px);
+		position: absolute;
+		right: rem-calc(60px);
+		top: 0;
+	}
+
+	&:last-of-type {
+		border-bottom: 2px solid rgb(235, 235, 235);
+		border-bottom-left-radius: var(--border-radius);
+		border-bottom-right-radius: var(--border-radius);
+		margin-bottom: rem-calc(30px);
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: rem-calc(30px 60px);
+
+		&__item {
+			display: block;
+			margin-bottom: 0 !important;
+		}
+
+		&__head {
+			margin-bottom: rem-calc(10px);
+			width: 100%;
+		}
+	}
+}

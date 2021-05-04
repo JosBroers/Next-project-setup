@@ -8,7 +8,7 @@ import NProgress from "nprogress"
 import "../styles/main.scss"
 
 // Component imports
-import CookieNotice from "../components/CookieNotice"
+import { CookieNotice } from "../components/cookies"
 import GoogleTagManager from "../components/GoogleTagManager"
 
 // Theme
