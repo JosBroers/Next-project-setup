@@ -8,6 +8,9 @@ import Router from "next/router"
 // CSS imports
 import styles from "../../styles/components/cookies/cookie-notice.module.scss"
 
+// Component imports
+import Button from "../Button"
+
 const CookieNotice = () => {
 	const [HideCookieBanner, setHideCookieBanner] = useState(false)
 	const cookies = new Cookies()
@@ -44,9 +47,7 @@ const CookieNotice = () => {
 						</p>
 					</Box>
 					<Flex width={[1, 1, 1 / 4]} justifyContent={["flex-start", "flex-start", "flex-end"]}>
-						<button className={styles["cookie-notice__button"]} onClick={setCookies}>
-							Close
-						</button>
+						<Button style="primary" title="Close" type="action" onClick={setCookies} />
 					</Flex>
 				</Flex>
 			</div>

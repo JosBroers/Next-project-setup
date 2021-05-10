@@ -1,13 +1,13 @@
 /* Preflight */
-@import "./preflight";
+@import "./common/preflight";
 
 /* Base */
-@import "./variables";
-@import "./fonts";
-@import "./typography";
-@import "./base";
-@import "./utils";
-@import "./animations";
+@import "./common/variables";
+@import "./common/fonts";
+@import "./common/typography";
+@import "./common/base";
+@import "./common/utils";
+@import "./common/animations";
 
 /* Modules */
 @import "./modules/nprogress";

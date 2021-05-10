@@ -47,33 +47,11 @@
 		}
 	}
 
-	&__button {
-		background-color: var(--color-black);
-		border-radius: var(--border-radius);
-		color: var(--color-white);
-		font-weight: 500;
-		margin-top: rem-calc(20px);
-		padding: rem-calc(12px 30px);
-		transition: background-color var(--transition-duration) ease-in-out;
-
-		&:hover {
-			background-color: var(--color-gray);
-		}
-
-		&:focus {
-			outline: 0;
-		}
-	}
-
 	@media screen and (min-width: 768px) {
 		padding: rem-calc(30px);
 
 		&__wrapper {
 			bottom: rem-calc(40px);
-		}
-
-		&__button {
-			margin-top: 0;
 		}
 	}
 }
