@@ -8,8 +8,8 @@ module.exports = withBundleAnalyzer({
 	},
 	sassOptions: {
 		prependData: `
-			@import "./styles/_unit.scss";
-			@import "./styles/_animations.scss";
+			@import "./styles/common/_unit.scss";
+			@import "./styles/common/_animations.scss";
 		`,
 	},
 	async redirects() {
