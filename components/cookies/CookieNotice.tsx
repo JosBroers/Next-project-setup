@@ -47,7 +47,9 @@ const CookieNotice = () => {
 						</p>
 					</Box>
 					<Flex width={[1, 1, 1 / 4]} justifyContent={["flex-start", "flex-start", "flex-end"]}>
-						<Button style="primary" title="Close" type="action" onClick={setCookies} />
+						<Box marginTop={["20px", "20px", 0]}>
+							<Button style="primary" title="Close" type="action" onClick={setCookies} />
+						</Box>
 					</Flex>
 				</Flex>
 			</div>
