@@ -68,11 +68,6 @@ const Home = () => {
 								</a>
 							</li>
 							<li>
-								<a href="https://day.js.org/" title="Day.js" target="_blank" rel="noreferrer">
-									Day.js
-								</a>
-							</li>
-							<li>
 								<a
 									href="https://tagmanager.google.com/"
 									title="Google Tag Manager"
