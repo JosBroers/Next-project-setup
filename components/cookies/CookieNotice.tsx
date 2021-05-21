@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react"
 import { Flex, Box } from "reflexbox/styled-components"
 import Link from "next/link"
 import Cookies from "universal-cookie"
-import dayjs from "dayjs"
 import Router from "next/router"
 
 // CSS imports
@@ -14,7 +13,13 @@ import Button from "../Button"
 const CookieNotice = () => {
 	const [HideCookieBanner, setHideCookieBanner] = useState(false)
 	const cookies = new Cookies()
-	const expire = dayjs().add(1, "year").format()
+
+	const date = new Date()
+	const year = date.getFullYear()
+	const month = date.getMonth()
+	const day = date.getDate()
+	const expire = new Date(year + 1, month, day)
+
 	const cookieClass = HideCookieBanner
 		? "cookie-notice__wrapper--hidden"
 		: "cookie-notice__wrapper--active"
