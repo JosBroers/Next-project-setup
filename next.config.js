@@ -7,7 +7,10 @@ module.exports = withBundleAnalyzer({
 		domains: ["ik.imagekit.io"],
 	},
 	sassOptions: {
-		prependData: `@import "./styles/_unit.scss";`,
+		prependData: `
+			@import "./styles/common/_unit.scss";
+			@import "./styles/common/_animations.scss";
+		`,
 	},
 	async redirects() {
 		return [

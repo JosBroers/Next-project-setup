@@ -1,0 +1,27 @@
+.button {
+	border-radius: var(--border-radius);
+	color: var(--color-white);
+	font-weight: 500;
+	padding: rem-calc(12px 30px);
+	transition: background-color var(--transition-duration) ease-in-out;
+
+	&--primary {
+		background-color: var(--color-primary);
+
+		&:hover {
+			background-color: var(--color-primary-light);
+		}
+	}
+
+	&--secondary {
+		background-color: var(--color-secondary);
+
+		&:hover {
+			background-color: var(--color-secondary-light);
+		}
+	}
+
+	&:focus {
+		outline: 0;
+	}
+}

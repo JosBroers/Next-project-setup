@@ -1,0 +1,67 @@
+/* Body */
+body {
+	font-family: var(--font-inter);
+	font-size: var(--font-size);
+	line-height: var(--font-line-height);
+}
+
+@supports (font-variation-settings: normal) {
+	body {
+		font-family: var(--font-inter-var);
+	}
+}
+
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	hyphens: auto;
+	line-height: 1.2;
+	word-break: break-word;
+}
+
+h1 {
+	font-size: rem-calc(35px);
+	margin-bottom: rem-calc(30px);
+}
+
+h2 {
+	font-size: rem-calc(28px);
+	margin-bottom: rem-calc(20px);
+}
+
+h3,
+h4 {
+	margin-bottom: rem-calc(15px);
+}
+
+h3 {
+	font-size: rem-calc(24px);
+}
+
+h4 {
+	font-size: rem-calc(20px);
+	font-weight: 600;
+}
+
+/* Paragraph */
+p {
+	margin-bottom: rem-calc(30px);
+}
+
+/* List */
+ul {
+	list-style-type: disc;
+	margin-bottom: rem-calc(30px);
+	padding-inline-start: rem-calc(20px);
+}
+
+ol {
+	list-style-type: decimal;
+	margin-bottom: rem-calc(30px);
+	padding-inline-start: rem-calc(20px);
+}

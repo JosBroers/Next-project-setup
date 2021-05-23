@@ -12,8 +12,8 @@ const Error = () => (
 			<title>Page not found | Next Project Setup</title>
 		</Head>
 		<Container>
-			<Flex>
-				<Box width={[1, 1, 1, 1, 8 / 12]}>
+			<Flex height={"100vh"} justifyContent="center" alignItems="center">
+				<Box textAlign="center" width={[1, 1, 1, 1, 3 / 5]}>
 					<h1>Page not found!</h1>
 					<p>
 						It seems that the page you are trying to visit does not exist (anymore). Click on the
