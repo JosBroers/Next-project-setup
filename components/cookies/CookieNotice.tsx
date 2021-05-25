@@ -4,37 +4,39 @@ import Link from "next/link"
 import Cookies from "universal-cookie"
 import Router from "next/router"
 
-// CSS imports
+/* CSS imports */
 import styles from "../../styles/components/cookies/cookie-notice.module.scss"
 
-// Component imports
+/* Component imports */
 import Button from "../Button"
 
 const CookieNotice = () => {
 	const [HideCookieBanner, setHideCookieBanner] = useState(false)
 	const cookies = new Cookies()
 
+	/* 1 year from today */
 	const date = new Date()
 	const year = date.getFullYear()
 	const month = date.getMonth()
 	const day = date.getDate()
 	const expire = new Date(year + 1, month, day)
 
+	/* Cookie display class */
 	const cookieClass = HideCookieBanner
 		? "cookie-notice__wrapper--hidden"
 		: "cookie-notice__wrapper--active"
 
-	function setCookies() {
-		setHideCookieBanner(true)
-		cookies.set("cookie-consent", "allowed", { path: "/", expires: new Date(expire) })
-		Router.reload()
-	}
-
 	useEffect(() => {
+		/* Check if cookie-consent is set */
 		if (cookies.get("cookie-consent") === "allowed") {
 			setHideCookieBanner(true)
 		} else {
 			setHideCookieBanner(false)
+		}
+
+		/* Set cookie-consent */
+		if (cookies.get("cookie-consent") !== "allowed" && HideCookieBanner === true) {
+			cookies.set("cookie-consent", "allowed", { path: "/", expires: expire })
 		}
 	})
 
@@ -45,7 +47,7 @@ const CookieNotice = () => {
 					<Box className={styles["cookie-notice__content"]} width={[1, 1, 3 / 4]}>
 						<p>
 							We use{" "}
-							<Link href="/cookies">
+							<Link href="/cookies/">
 								<a title="cookies and similar technologies">cookies and similar technologies</a>
 							</Link>{" "}
 							to provide you with a great user experience.
@@ -53,7 +55,12 @@ const CookieNotice = () => {
 					</Box>
 					<Flex width={[1, 1, 1 / 4]} justifyContent={["flex-start", "flex-start", "flex-end"]}>
 						<Box marginTop={["20px", "20px", 0]}>
-							<Button style="primary" title="Close" type="action" onClick={setCookies} />
+							<Button
+								style="primary"
+								title="Close"
+								type="action"
+								onClick={() => setHideCookieBanner(true)}
+							/>
 						</Box>
 					</Flex>
 				</Flex>

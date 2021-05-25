@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-// CSS imports
+/* CSS imports */
 import styles from "../styles/components/header.module.scss"
 
 const Header = () => (

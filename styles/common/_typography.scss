@@ -1,13 +1,13 @@
 /* Body */
 body {
-	font-family: var(--font-inter);
+	font-family: var(--font-inter), var(--font-fallback);
 	font-size: var(--font-size);
 	line-height: var(--font-line-height);
 }
 
 @supports (font-variation-settings: normal) {
 	body {
-		font-family: var(--font-inter-var);
+		font-family: var(--font-inter-var), var(--font-fallback);
 	}
 }
 
