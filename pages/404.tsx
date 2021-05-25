@@ -3,7 +3,7 @@ import Head from "next/head"
 import { Flex, Box } from "reflexbox/styled-components"
 import Link from "next/link"
 
-// Component imports
+/* Component imports */
 import Container from "../components/Container"
 
 const Error = () => (

@@ -8,12 +8,21 @@ export default Sitemap
 
 let sitemap = null
 
+/* Add URLS */
 const addUrls = async (smStream: SitemapStream) => {
+	const lastMod = new Date("2021-05-25")
+
 	smStream.write({
 		url: "",
 		changefreq: "weekly",
-		lastmod: new Date(),
+		lastmod: lastMod,
 		priority: 1,
+	})
+	smStream.write({
+		url: "/cookies",
+		changefreq: "weekly",
+		lastmod: lastMod,
+		priority: 0.8,
 	})
 }
 
@@ -46,7 +55,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res, req }) => {
 		smStream.end()
 		const resp = await streamToPromise(pipeline)
 
-		// cache the result
+		/* Cache the result */
 		sitemap = resp
 
 		res.write(resp)

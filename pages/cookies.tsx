@@ -3,11 +3,12 @@ import Head from "next/head"
 import Link from "next/link"
 import { Box } from "reflexbox/styled-components"
 
-// Component imports
+/* Component imports */
 import Container from "../components/Container"
 import { CookieBlock, CookieWrap } from "../components/cookies"
 
 const Cookies = () => {
+	/* SEO props */
 	const title = "Cookies | Next Project Setup"
 	const description =
 		"We use different types of cookies for our website. On this page u can read about the cookies we use and what we use them for."
@@ -90,7 +91,7 @@ const Cookies = () => {
 							<CookieBlock
 								description="Used to store whether or not the cookie notification has been displayed."
 								name="cookie-consent"
-								domain=".jobrodo.nl"
+								domain="*.jobrodo.nl"
 								expires="After 1 year"
 							/>
 						</CookieWrap>
@@ -136,7 +137,7 @@ const Cookies = () => {
 							cookies we use are only used to improve the experience for you as a visitor. All data
 							is anonymized and not used for other purposes.
 						</p>
-						<h4>Delete cookies?</h4>
+						<h3>Delete cookies?</h3>
 						<p>
 							You can easily opt out of cookies by setting your internet browser in such a way that
 							it does not store cookies. In addition, you can also easily delete all information

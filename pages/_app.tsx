@@ -4,21 +4,23 @@ import Head from "next/head"
 import { ThemeProvider } from "styled-components"
 import NProgress from "nprogress"
 
-// CSS imports
+/* CSS imports */
 import "../styles/main.scss"
 
-// Component imports
+/* Component imports */
 import { CookieNotice } from "../components/cookies"
 import GoogleTagManager from "../components/GoogleTagManager"
 
-// Theme
+/* Breakpoints for Styled Components */
 const theme = {
 	breakpoints: ["576px", "768px", "992px", "1024px"],
 }
 
 const MyApp = ({ Component, pageProps, router }: AppProps) => {
+	/* Page URL */
 	const url = process.env.NEXT_PUBLIC_SITE_URL + router.pathname
 
+	/* NProgress */
 	useEffect(() => {
 		const routeChangeStart = () => NProgress.start()
 		const routeChangeComplete = () => NProgress.done()
