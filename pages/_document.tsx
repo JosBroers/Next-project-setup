@@ -17,22 +17,22 @@ class MyDocument extends Document {
 						href="/fonts/Inter-Roman.var.woff2"
 						type="font/woff2"
 						as="font"
-						crossOrigin
+						crossOrigin=""
 					/>
 					<link
 						rel="preload"
 						href="/fonts/Inter-Italic.var.woff2"
 						type="font/woff2"
 						as="font"
-						crossOrigin
+						crossOrigin=""
 					/>
 
 					{/* Preconnect */}
-					<link rel="preconnect" href="https://ik.imagekit.io/" crossorigin />
+					<link rel="preconnect" href="https://ik.imagekit.io/" crossOrigin="" />
 
 					{/* DNS Prefetch */}
-					<link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
-					<link rel="dns-prefetch" href="https://www.google-analytics.com/" />
+					<link rel="dns-prefetch" href="https://www.googletagmanager.com/" crossOrigin="" />
+					<link rel="dns-prefetch" href="https://www.google-analytics.com/" crossOrigin="" />
 
 					{/* Google Tag Manager */}
 					<script
