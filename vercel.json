@@ -1,0 +1,28 @@
+{
+	"cleanUrls": true,
+	"trailingSlash": true,
+	"redirects": [
+		{ "source": "/home", "destination": "/" },
+		{ "source": "/github", "destination": "https://github.com/JosBroers/next-project-setup" }
+	],
+	"headers": [
+		{
+			"source": "/fonts/Inter-Roman.var.woff2",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, immutable"
+				}
+			]
+		},
+		{
+			"source": "/fonts/Inter-Italic.var.woff2",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, immutable"
+				}
+			]
+		}
+	]
+}
