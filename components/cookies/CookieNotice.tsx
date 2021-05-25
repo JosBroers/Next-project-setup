@@ -48,7 +48,7 @@ const CookieNotice = () => {
 					<Box className={styles["cookie-notice__content"]} width={[1, 1, 3 / 4]}>
 						<p>
 							We use{" "}
-							<Link href="/cookies">
+							<Link href="/cookies/">
 								<a title="cookies and similar technologies">cookies and similar technologies</a>
 							</Link>{" "}
 							to provide you with a great user experience.
