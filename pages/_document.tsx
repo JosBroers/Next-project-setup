@@ -1,7 +1,7 @@
 import React from "react"
 import Document, { Head, Html, Main, NextScript } from "next/document"
 
-// Import libs
+/* Imports libraries */
 import { GTM_ID } from "../lib/gtm"
 
 class MyDocument extends Document {
@@ -10,10 +10,31 @@ class MyDocument extends Document {
 			<Html lang="nl">
 				<Head>
 					<meta charSet="utf-8" />
-					<link rel="preload" href="/fonts/Inter-Roman.var.woff2" as="font" crossOrigin="" />
-					<link rel="preload" href="/fonts/Inter-Italic.var.woff2" as="font" crossOrigin="" />
 
-					{/* Google Tag Manager - Global base code */}
+					{/* Preloads */}
+					<link
+						rel="preload"
+						href="/fonts/Inter-Roman.var.woff2"
+						type="font/woff2"
+						as="font"
+						crossOrigin
+					/>
+					<link
+						rel="preload"
+						href="/fonts/Inter-Italic.var.woff2"
+						type="font/woff2"
+						as="font"
+						crossOrigin
+					/>
+
+					{/* Preconnect */}
+					<link rel="preconnect" href="https://ik.imagekit.io/" crossorigin />
+
+					{/* DNS Prefetch */}
+					<link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
+					<link rel="dns-prefetch" href="https://www.google-analytics.com/" />
+
+					{/* Google Tag Manager */}
 					<script
 						dangerouslySetInnerHTML={{
 							__html: `

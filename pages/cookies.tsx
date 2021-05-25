@@ -3,11 +3,12 @@ import Head from "next/head"
 import Link from "next/link"
 import { Box } from "reflexbox/styled-components"
 
-// Component imports
+/* Component imports */
 import Container from "../components/Container"
 import { CookieBlock, CookieWrap } from "../components/cookies"
 
 const Cookies = () => {
+	/* SEO props */
 	const title = "Cookies | Next Project Setup"
 	const description =
 		"We use different types of cookies for our website. On this page u can read about the cookies we use and what we use them for."
@@ -90,7 +91,7 @@ const Cookies = () => {
 							<CookieBlock
 								description="Used to store whether or not the cookie notification has been displayed."
 								name="cookie-consent"
-								domain=".jobrodo.nl"
+								domain="*.jobrodo.nl"
 								expires="After 1 year"
 							/>
 						</CookieWrap>

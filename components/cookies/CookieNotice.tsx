@@ -4,22 +4,24 @@ import Link from "next/link"
 import Cookies from "universal-cookie"
 import Router from "next/router"
 
-// CSS imports
+/* CSS imports */
 import styles from "../../styles/components/cookies/cookie-notice.module.scss"
 
-// Component imports
+/* Component imports */
 import Button from "../Button"
 
 const CookieNotice = () => {
 	const [HideCookieBanner, setHideCookieBanner] = useState(false)
 	const cookies = new Cookies()
 
+	/* 1 year from today */
 	const date = new Date()
 	const year = date.getFullYear()
 	const month = date.getMonth()
 	const day = date.getDate()
 	const expire = new Date(year + 1, month, day)
 
+	/* Cookie display class */
 	const cookieClass = HideCookieBanner
 		? "cookie-notice__wrapper--hidden"
 		: "cookie-notice__wrapper--active"
@@ -30,6 +32,7 @@ const CookieNotice = () => {
 		Router.reload()
 	}
 
+	/* Check if cookie is set */
 	useEffect(() => {
 		if (cookies.get("cookie-consent") === "allowed") {
 			setHideCookieBanner(true)
