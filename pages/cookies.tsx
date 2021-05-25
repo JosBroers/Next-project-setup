@@ -137,7 +137,7 @@ const Cookies = () => {
 							cookies we use are only used to improve the experience for you as a visitor. All data
 							is anonymized and not used for other purposes.
 						</p>
-						<h4>Delete cookies?</h4>
+						<h3>Delete cookies?</h3>
 						<p>
 							You can easily opt out of cookies by setting your internet browser in such a way that
 							it does not store cookies. In addition, you can also easily delete all information
