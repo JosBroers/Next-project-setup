@@ -26,18 +26,17 @@ const CookieNotice = () => {
 		? "cookie-notice__wrapper--hidden"
 		: "cookie-notice__wrapper--active"
 
-	function setCookies() {
-		setHideCookieBanner(true)
-		cookies.set("cookie-consent", "allowed", { path: "/", expires: new Date(expire) })
-		Router.reload()
-	}
-
-	/* Check if cookie is set */
 	useEffect(() => {
+		/* Check if cookie-consent is set */
 		if (cookies.get("cookie-consent") === "allowed") {
 			setHideCookieBanner(true)
 		} else {
 			setHideCookieBanner(false)
+		}
+
+		/* Set cookie-consent */
+		if (cookies.get("cookie-consent") !== "allowed" && HideCookieBanner === true) {
+			cookies.set("cookie-consent", "allowed", { path: "/", expires: expire })
 		}
 	})
 
@@ -56,7 +55,12 @@ const CookieNotice = () => {
 					</Box>
 					<Flex width={[1, 1, 1 / 4]} justifyContent={["flex-start", "flex-start", "flex-end"]}>
 						<Box marginTop={["20px", "20px", 0]}>
-							<Button style="primary" title="Close" type="action" onClick={setCookies} />
+							<Button
+								style="primary"
+								title="Close"
+								type="action"
+								onClick={() => setHideCookieBanner(true)}
+							/>
 						</Box>
 					</Flex>
 				</Flex>
