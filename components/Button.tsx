@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 
-// CSS imports
+/* CSS Imports */
 import styles from "../styles/components/button.module.scss"
 
 interface ButtonProps {
@@ -14,6 +14,8 @@ interface ButtonProps {
 
 const ButtonInternal = Props => {
 	const { link, title } = Props
+
+	/* Define style variant */
 	const style = Props.style ? `button--${Props.style}` : "button--primary"
 
 	return (
@@ -27,6 +29,8 @@ const ButtonInternal = Props => {
 
 const ButtonExternal = Props => {
 	const { link, title } = Props
+
+	/* Define style variant */
 	const style = Props.style ? `button--${Props.style}` : "button--primary"
 
 	return (
@@ -44,6 +48,8 @@ const ButtonExternal = Props => {
 
 const ButtonAction = Props => {
 	const { title, onClick } = Props
+
+	/* Define style variant */
 	const style = Props.style ? `button--${Props.style}` : "button--primary"
 
 	return (
@@ -57,6 +63,7 @@ const Button = (Props: ButtonProps) => {
 	const type = Props.type ? Props.type : "internal"
 	let button
 
+	/* Load defined component */
 	if (type === "internal") {
 		button = <ButtonInternal {...Props} />
 	} else if (type === "external") {

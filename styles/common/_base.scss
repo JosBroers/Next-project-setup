@@ -16,9 +16,7 @@ body {
 /* Buttons */
 a {
 	color: var(--color-blue);
-	-webkit-tap-highlight-color: transparent;
 	text-decoration: none;
-	user-select: none;
 
 	&:hover {
 		text-decoration: underline;

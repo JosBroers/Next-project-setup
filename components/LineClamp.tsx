@@ -1,6 +1,6 @@
 import React from "react"
 
-// CSS imports
+/* CSS imports */
 import styles from "../styles/components/line-clamp.module.scss"
 
 interface LineClampProps {
@@ -10,6 +10,8 @@ interface LineClampProps {
 
 const LineClamp = (Props: LineClampProps) => {
 	const { children, amount } = Props
+
+	/* Define amount of lines */
 	const clampAmount = amount ? amount : 1
 	const cssClass = `line-clamp--${clampAmount}`
 

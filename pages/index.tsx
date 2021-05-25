@@ -2,14 +2,15 @@ import React from "react"
 import Head from "next/head"
 import { Flex, Box } from "reflexbox/styled-components"
 
-// Component imports
+/* Component imports */
 import Container from "../components/Container"
 import Header from "../components/Header"
 
-// Icon imports
+/* Icon imports */
 import { GithubIcon } from "../icons"
 
 const Home = () => {
+	/* SEO props */
 	const title = "Next Project Setup: the advanced starter-kit for Next.js"
 	const description =
 		"This repository is a setup project which can be used for starting an application with Next.js."
@@ -41,7 +42,7 @@ const Home = () => {
 				>
 					<h1 className="no-margin">Next.js Project Setup</h1>
 					<a
-						href="https://github.com/JosBroers/next-project-setup"
+						href="https://github.com/JosBroers/next-project-setup/"
 						title="GitHub"
 						target="_blank"
 						rel="noreferrer"
@@ -144,7 +145,7 @@ const Home = () => {
 							</li>
 							<li>
 								<a
-									href="https://tailwindcss.com/docs/preflight"
+									href="https://tailwindcss.com/docs/preflight/"
 									title="Tailwind Preflight"
 									target="_blank"
 									rel="noreferrer"
@@ -164,7 +165,7 @@ const Home = () => {
 							</li>
 							<li>
 								<a
-									href="https://www.npmjs.com/package/universal-cookie"
+									href="https://www.npmjs.com/package/universal-cookie/"
 									title="Universal cookies"
 									target="_blank"
 									rel="noreferrer"
