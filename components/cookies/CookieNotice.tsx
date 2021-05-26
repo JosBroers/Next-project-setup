@@ -34,9 +34,10 @@ const CookieNotice = () => {
 			setHideCookieBanner(false)
 		}
 
-		/* Set cookie-consent */
+		/* Set cookie-consent and reload */
 		if (cookies.get("cookie-consent") !== "allowed" && HideCookieBanner === true) {
 			cookies.set("cookie-consent", "allowed", { path: "/", expires: expire })
+			Router.reload()
 		}
 	})
 
