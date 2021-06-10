@@ -6,14 +6,15 @@ import styles from "../styles/components/button.module.scss"
 
 interface ButtonProps {
 	link?: string
-	title: string
+	title?: string
 	type?: "internal" | "external" | "action"
 	onClick?: any
-	style?: "primary" | "secondary"
+	style?: "primary" | "secondary" | "none"
+	icon?: React.ReactNode
 }
 
 const ButtonInternal = Props => {
-	const { link, title } = Props
+	const { link, title, icon } = Props
 
 	/* Define style variant */
 	const style = Props.style ? `button--${Props.style}` : "button--primary"
@@ -21,14 +22,14 @@ const ButtonInternal = Props => {
 	return (
 		<Link href={link}>
 			<a className={`${styles.button} ${styles[style]}`} title={title}>
-				{title}
+				{icon ? icon : title}
 			</a>
 		</Link>
 	)
 }
 
 const ButtonExternal = Props => {
-	const { link, title } = Props
+	const { link, title, icon } = Props
 
 	/* Define style variant */
 	const style = Props.style ? `button--${Props.style}` : "button--primary"
@@ -41,20 +42,20 @@ const ButtonExternal = Props => {
 			title={title}
 			className={`${styles.button} ${styles[style]}`}
 		>
-			{title}
+			{icon ? icon : title}
 		</a>
 	)
 }
 
 const ButtonAction = Props => {
-	const { title, onClick } = Props
+	const { title, onClick, icon } = Props
 
 	/* Define style variant */
 	const style = Props.style ? `button--${Props.style}` : "button--primary"
 
 	return (
 		<button className={`${styles.button} ${styles[style]}`} onClick={onClick}>
-			{title}
+			{icon ? icon : title}
 		</button>
 	)
 }

@@ -5,6 +5,7 @@ import { Flex, Box } from "reflexbox/styled-components"
 /* Component imports */
 import Container from "../components/Container"
 import Header from "../components/Header"
+import Button from "../components/Button"
 
 /* Icon imports */
 import { GithubIcon } from "../icons"
@@ -59,119 +60,101 @@ const Home = () => {
 						</p>
 						<ul>
 							<li>
-								<a
-									href="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
-									title="Component-Level CSS"
-									target="_blank"
-									rel="noreferrer"
-								>
-									CSS Modules
-								</a>
+								<Button
+									type="external"
+									style="none"
+									link="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
+									title="CSS Modules"
+								/>
 							</li>
 							<li>
-								<a
-									href="https://tagmanager.google.com/"
+								<Button
+									type="external"
+									style="none"
+									link="https://tagmanager.google.com/"
 									title="Google Tag Manager"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Google Tag Manager
-								</a>
+								/>
 							</li>
 							<li>
-								<a href="https://eslint.org/" title="ESLint" target="_blank" rel="noreferrer">
-									ESLint
-								</a>
+								<Button type="external" style="none" link="https://eslint.org/" title="ESLint" />
 							</li>
 							<li>
-								<a
-									href="https://get.foundation/sites/docs/sass-functions.html#rem-calc"
-									target="_blank"
+								<Button
+									type="external"
+									style="none"
+									link="https://get.foundation/sites/docs/sass-functions.html#rem-calc"
 									title="Foundation rem-calc() function"
-									rel="noreferrer"
-								>
-									Foundation rem-calc() function
-								</a>
+								/>
 							</li>
 							<li>
-								<a href="https://imagekit.io/" target="_blank" title="Imagekit.io" rel="noreferrer">
-									Imagekit.io
-								</a>
+								<Button
+									type="external"
+									style="none"
+									link="https://imagekit.io/"
+									title="Imagekit.io"
+								/>
 							</li>
 							<li>
-								<a
-									href="https://ricostacruz.com/nprogress/"
-									target="_blank"
+								<Button
+									type="external"
+									style="none"
+									link="https://ricostacruz.com/nprogress/"
 									title="NProgress.js"
-									rel="noreferrer"
-								>
-									NProgress.js
-								</a>
+								/>
 							</li>
 							<li>
-								<a href="https://prettier.io/" title="Prettier" target="_blank" rel="noreferrer">
-									Prettier
-								</a>
+								<Button type="external" style="none" link="https://prettier.io/" title="Prettier" />
 							</li>
 							<li>
-								<a
-									href="https://rebassjs.org/reflexbox/"
+								<Button
+									type="external"
+									style="none"
+									link="https://rebassjs.org/reflexbox/"
 									title="Reflexbox"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Reflexbox
-								</a>
+								/>
 							</li>
 							<li>
-								<a href="https://sass-lang.com/" title="SCSS" target="_blank" rel="noreferrer">
-									SCSS
-								</a>
+								<Button type="external" style="none" link="https://sass-lang.com/" title="SCSS" />
 							</li>
 							<li>
-								<a
-									href="https://styled-components.com/"
+								<Button
+									type="external"
+									style="none"
+									link="https://styled-components.com/"
 									title="Styled Components"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Styled Components
-								</a>
+								/>
 							</li>
 							<li>
-								<a href="https://stylelint.io/" title="Stylelint" target="_blank" rel="noreferrer">
-									Stylelint
-								</a>
+								<Button
+									type="external"
+									style="none"
+									link="https://stylelint.io/"
+									title="Stylelint"
+								/>
 							</li>
 							<li>
-								<a
-									href="https://tailwindcss.com/docs/preflight/"
+								<Button
+									type="external"
+									style="none"
+									link="https://tailwindcss.com/docs/preflight/"
 									title="Tailwind Preflight"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Tailwind Preflight
-								</a>
+								/>
 							</li>
 							<li>
-								<a
-									href="https://www.typescriptlang.org/"
+								<Button
+									type="external"
+									style="none"
+									link="https://www.typescriptlang.org/"
 									title="TypeScript"
-									target="_blank"
-									rel="noreferrer"
-								>
-									TypeScript
-								</a>
+								/>
 							</li>
 							<li>
-								<a
-									href="https://www.npmjs.com/package/universal-cookie/"
+								<Button
+									type="external"
+									style="none"
+									link="https://www.npmjs.com/package/universal-cookie/"
 									title="Universal cookies"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Universal cookies
-								</a>
+								/>
 							</li>
 						</ul>
 					</Box>
