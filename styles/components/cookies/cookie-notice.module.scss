@@ -19,7 +19,7 @@
 		z-index: 9999;
 
 		&--hidden {
-			display: none;
+			pointer-events: none;
 		}
 
 		&--active {
@@ -47,7 +47,7 @@
 		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@include breakpoint(md) {
 		padding: rem-calc(30px);
 
 		&__wrapper {

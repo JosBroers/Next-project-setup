@@ -10,6 +10,7 @@ module.exports = withBundleAnalyzer({
 		prependData: `
 			@import "./styles/common/_unit.scss";
 			@import "./styles/common/_animations.scss";
+			@import "./styles/common/_mixins.scss";
 		`,
 	},
 	async redirects() {
