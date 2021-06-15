@@ -3,7 +3,10 @@
 ## Prerequisites
 
 Install the Node version listed in `.nvmrc` (use a Node version manager such
-as [NVM for Mac](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows))
+as [NVM for Mac](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows)).
+
+- Use `nvm use` to install and select the Node version listed in `.nvmrc`
+- Use `node -v > .nvmrc` to update the file `.nvmrc` with the current Node version
 
 ## Environment Variables
 
@@ -27,6 +30,7 @@ In order to use Google Tag Manager and set the SEO defaults follow these steps:
 - To export application as static HTML, use `next build && next export`
 - For checking on unused imports, use `yarn find:unused`
 - For analyzing the chunks and modules, use `yarn analyze`
+- For analyzing dependencies in the project, use `yarn depcheck`
 
 ## Vercel CLI
 
@@ -36,8 +40,3 @@ In order to use Google Tag Manager and set the SEO defaults follow these steps:
 - Use `vercel dev` to deploy a local test server at [http://localhost:3000](http://localhost:3000)
 - Use `vercel` to deploy a preview build
 - Use `vercel --prod` to deploy a production build
-
-## Depcheck
-
-- To install Depcheck use `npm install -g depcheck typescript`
-- Use `depcheck` to analyze the dependencies in the project

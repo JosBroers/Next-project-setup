@@ -27,8 +27,8 @@ module.exports = withBundleAnalyzer({
 			},
 		]
 	},
-	future: {
-		webpack5: true,
+	experimental: {
+		eslint: true,
 	},
 	trailingSlash: true,
 	reactStrictMode: true,

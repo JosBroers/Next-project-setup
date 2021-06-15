@@ -3,24 +3,17 @@ import type { AppProps } from "next/app"
 import Head from "next/head"
 import { ThemeProvider } from "styled-components"
 import NProgress from "nprogress"
-
-/* CSS imports */
 import "../styles/main.scss"
-
-/* Component imports */
 import { CookieNotice } from "../components/cookies"
 import GoogleTagManager from "../components/GoogleTagManager"
 
-/* Breakpoints for Styled Components */
 const theme = {
 	breakpoints: ["576px", "768px", "992px", "1024px"],
 }
 
 const MyApp = ({ Component, pageProps, router }: AppProps) => {
-	/* Page URL */
 	const url = process.env.NEXT_PUBLIC_SITE_URL + router.pathname
 
-	/* NProgress */
 	useEffect(() => {
 		const routeChangeStart = () => NProgress.start()
 		const routeChangeComplete = () => NProgress.done()
@@ -34,7 +27,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 			router.events.off("routeChangeComplete", routeChangeComplete)
 			router.events.off("routeChangeError", routeChangeComplete)
 		}
-	}, [])
+	}, [router.events])
 
 	return (
 		<GoogleTagManager>

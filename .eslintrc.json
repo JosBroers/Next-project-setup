@@ -3,7 +3,8 @@
 		"browser": true,
 		"es2021": true
 	},
-	"extends": ["plugin:react/recommended", "airbnb", "prettier", "eslint"],
+	"extends": ["plugin:react/recommended", "airbnb", "prettier", "next"],
+	"root": true,
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -14,26 +15,28 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react", "@typescript-eslint", "prettier"],
+	"settings": {
+		"import/resolver": { "node": { "extensions": [".js", ".ts", ".tsx"] } },
+		"react": { "version": "detect" }
+	},
 	"rules": {
 		"react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", "tsx"] }],
+		"no-use-before-define": "off",
+		"prettier/prettier": "error",
+		"react/jsx-props-no-spreading": "off",
+		"no-tabs": ["error", { "allowIndentationTabs": true }],
 		"import/extensions": [
 			"error",
 			"ignorePackages",
 			{ "js": "never", "ts": "never", "tsx": "never" }
 		],
-		"no-tabs": ["error", { "allowIndentationTabs": true }],
-		"prettier/prettier": "error",
-		"no-use-before-define": "off",
-		"react/jsx-props-no-spreading": "off",
 		"jsx-a11y/anchor-is-valid": [
 			"error",
 			{
-				"components": ["Link"]
+				"components": ["Link"],
+				"specialLink": ["hrefLeft", "hrefRight"],
+				"aspects": ["invalidHref", "preferButton"]
 			}
 		]
-	},
-	"settings": {
-		"import/resolver": { "node": { "extensions": [".js", ".ts", ".tsx"] } },
-		"react": { "version": "detect" }
 	}
 }

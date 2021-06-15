@@ -1,8 +1,7 @@
+/* eslint-disable react/no-danger */
 import React from "react"
 import Document, { Head, Html, Main, NextScript } from "next/document"
 import { ServerStyleSheet } from "styled-components"
-
-/* Imports libraries */
 import { GTM_ID } from "../lib/gtm"
 
 class MyDocument extends Document {
@@ -36,8 +35,6 @@ class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta charSet="utf-8" />
-
-					{/* Preloads */}
 					<link
 						rel="preload"
 						href="/fonts/Inter-Roman.var.woff2"
@@ -52,15 +49,9 @@ class MyDocument extends Document {
 						as="font"
 						crossOrigin=""
 					/>
-
-					{/* Preconnect */}
 					<link rel="preconnect" href="https://ik.imagekit.io/" crossOrigin="" />
-
-					{/* DNS Prefetch */}
 					<link rel="dns-prefetch" href="https://www.googletagmanager.com/" crossOrigin="" />
 					<link rel="dns-prefetch" href="https://www.google-analytics.com/" crossOrigin="" />
-
-					{/* Google Tag Manager */}
 					<script
 						dangerouslySetInnerHTML={{
 							__html: `
@@ -79,6 +70,7 @@ class MyDocument extends Document {
 							src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
 							height="0"
 							width="0"
+							title="Google Tag Manager"
 							style={{ display: "none", visibility: "hidden" }}
 						/>
 					</noscript>
