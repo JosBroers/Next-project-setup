@@ -4,13 +4,12 @@ import Link from "next/link"
 import { Box } from "reflexbox/styled-components"
 import Container from "../components/Container"
 import { CookieBlock, CookieWrap } from "../components/cookies"
-import thumbnail from "../public/images/thumbnail.png"
 
 const data = {
 	title: "Cookies | Next Project Setup",
 	description:
 		"We use different types of cookies for our website. On this page u can read about the cookies we use and what we use them for.",
-	image: thumbnail,
+	image: `${process.env.NEXT_PUBLIC_IMAGEKIT}thumbnail_JHMOxBSr9F4.png`,
 }
 
 const Cookies = () => {

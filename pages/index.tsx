@@ -10,7 +10,7 @@ const data = {
 	title: "Next Project Setup: the advanced starter-kit for Next.js",
 	description:
 		"This repository is a setup project which can be used for starting an application with Next.js.",
-	image: process.env.NEXT_PUBLIC_IMAGEKIT + "thumbnail_JHMOxBSr9F4.png",
+	image: `${process.env.NEXT_PUBLIC_IMAGEKIT}thumbnail_JHMOxBSr9F4.png`,
 }
 
 const Home = () => {
