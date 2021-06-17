@@ -5,13 +5,12 @@ import Container from "../components/Container"
 import Header from "../components/Header"
 import Button from "../components/Button"
 import { GithubIcon } from "../icons"
-import thumbnail from "../public/images/thumbnail.png"
 
 const data = {
 	title: "Next Project Setup: the advanced starter-kit for Next.js",
 	description:
 		"This repository is a setup project which can be used for starting an application with Next.js.",
-	image: thumbnail,
+	image: process.env.NEXT_PUBLIC_IMAGEKIT + "thumbnail_JHMOxBSr9F4.png",
 }
 
 const Home = () => {

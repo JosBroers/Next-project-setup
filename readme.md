@@ -16,6 +16,8 @@ In order to use Google Tag Manager and set the SEO defaults follow these steps:
    - `NEXT_PUBLIC_GTM` (Your Google Tag Manager ID, e.g. `GTM-ABCDE1F`)
    - `NEXT_PUBLIC_SITE_NAME` (Your site name, e.g. `Next.js Project Setup`)
    - `NEXT_PUBLIC_SITE_URL` (Your site URL, e.g. `https://next-project-setup.jobrodo.nl/`)
+   - `NEXT_PUBLIC_IMAGEKIT` (Your Imagekit.io endpoint e.g. ` https://ik.imagekit.io/jobrodo/`)
+   - `NEXT_PUBLIC_IMAGEKIT_PLACEHOLDER` (Your Imagekit.io endpoint + ` https://ik.imagekit.io/jobrodo/tr:bl-100,q-1/`)
 2. Install the Vercel CLI with `npm install -g vercel`
 3. Connect your project to vercel with `vercel link` and configure credentials accordingly
 4. Pull the environment variables with `vercel env pull`
