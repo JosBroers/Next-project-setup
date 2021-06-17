@@ -1,7 +1,5 @@
 import React from "react"
 import { Flex } from "reflexbox/styled-components"
-
-/* CSS imports */
 import styles from "../../styles/components/cookies/cookie-block.module.scss"
 
 interface CookieBlockProps {
