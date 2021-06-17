@@ -43,7 +43,7 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 					<link
 						rel="shortcut icon"
 						type="image/png"
-						href="https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png"
+						href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png`}
 					/>
 					<link rel="canonical" href={url} />
 					<meta name="viewport" content="initial-scale=1.0, width=device-width" />
