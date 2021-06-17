@@ -10,6 +10,7 @@ module.exports = withBundleAnalyzer({
 		prependData: `
 			@import "./styles/common/_unit.scss";
 			@import "./styles/common/_animations.scss";
+			@import "./styles/common/_mixins.scss";
 		`,
 	},
 	async redirects() {
@@ -26,8 +27,8 @@ module.exports = withBundleAnalyzer({
 			},
 		]
 	},
-	future: {
-		webpack5: true,
+	experimental: {
+		eslint: true,
 	},
 	trailingSlash: true,
 	reactStrictMode: true,
