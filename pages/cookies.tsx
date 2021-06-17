@@ -2,37 +2,33 @@ import React from "react"
 import Head from "next/head"
 import Link from "next/link"
 import { Box } from "reflexbox/styled-components"
-
-/* Component imports */
 import Container from "../components/Container"
 import { CookieBlock, CookieWrap } from "../components/cookies"
 
+const data = {
+	title: "Cookies | Next Project Setup",
+	description:
+		"We use different types of cookies for our website. On this page u can read about the cookies we use and what we use them for.",
+	image: `${process.env.NEXT_PUBLIC_IMAGEKIT}thumbnail_JHMOxBSr9F4.png`,
+}
+
 const Cookies = () => {
-	/* SEO props */
-	const title = "Cookies | Next Project Setup"
-	const description =
-		"We use different types of cookies for our website. On this page u can read about the cookies we use and what we use them for."
-	const image = "https://ik.imagekit.io/jobrodo/jobrodo/thumbnail_JHMOxBSr9F4.png"
+	const { title, description, image } = data
 
 	return (
 		<>
 			<Head>
-				{/* SEO Title */}
 				<title>{title}</title>
 				<meta property="og:title" content={title} />
 				<meta name="twitter:title" content={title} />
-
-				{/* SEO Description */}
 				<meta name="description" content={description} />
 				<meta property="og:description" content={description} />
 				<meta name="twitter:description" content={description} />
-
-				{/* SEO Share Image */}
 				<meta property="og:image" content={image} />
 				<meta name="twitter:image" content={image} />
 			</Head>
 			<Container>
-				<Box width={[1, 1, 1, 1, 9 / 12]} margin="50px auto 0">
+				<Box width={[1, null, null, null, 9 / 12]} margin="50px auto 0">
 					<Box>
 						<h1>Cookie Policy</h1>
 						<p>
@@ -78,7 +74,7 @@ const Cookies = () => {
 							We use functional and analytical cookies on this site. You do not have to give
 							official permission for these cookies. Nevertheless, we would like to inform you which
 							cookies we place and how you can delete them if necessary. The majority of the cookies
-							will only be placed after you click the "close" button.
+							will only be placed after you click the &quot;close&quot; button.
 						</p>
 						<h3>Functional cookies</h3>
 						<p>
@@ -143,7 +139,7 @@ const Cookies = () => {
 							it does not store cookies. In addition, you can also easily delete all information
 							that has been previously stored. For more information about how we handle your data
 							and requests, we would like to refer you to our{" "}
-							<Link href="#">
+							<Link href="/privacy-policy">
 								<a title="Privacy policy">privacy policy</a>
 							</Link>
 							.
