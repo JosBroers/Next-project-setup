@@ -92,8 +92,8 @@ module.exports = withBundleAnalyzer(
 			]
 		},
 		pwa: {
-			dest: "public",
 			runtimeCaching,
+			disable: process.env.NODE_ENV === "development",
 		},
 		webpack: (config, { dev, isServer }) => {
 			if (!dev && !isServer) {
