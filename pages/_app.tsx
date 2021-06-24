@@ -48,12 +48,37 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 				<ThemeProvider theme={theme}>
 					<Head>
 						<link
-							rel="shortcut icon"
+							sizes="16x16"
 							type="image/png"
-							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png`}
+							rel="shortcut icon"
+							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-16,w-16`}
+						/>
+						<link
+							sizes="32x32"
+							type="image/png"
+							rel="shortcut icon"
+							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-32,h-32`}
+						/>
+						<link
+							sizes="96x96"
+							type="image/png"
+							rel="shortcut icon"
+							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-96,h-96`}
+						/>
+						<link
+							sizes="192x192"
+							type="image/png"
+							rel="shortcut icon"
+							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-192,h-192`}
 						/>
 						<link rel="canonical" href={url} />
-						<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+						<link rel="manifest" href="/manifest.json" />
+						<link
+							rel="apple-touch-icon"
+							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-180,h-180`}
+						/>
+						<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+						<meta name="viewport" content="initial-scale=1, width=device-width" />
 						<meta property="og:url" content={url} />
 						<meta name="robots" content="index, follow" />
 						<meta property="og:type" content="website" />

@@ -2,13 +2,16 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 	enabled: process.env.ANALYZE === "true",
 })
 
+const withPWA = require("next-pwa")
+const runtimeCaching = require("next-pwa/cache")
+
 const ContentSecurityPolicy = `
 	default-src 'self';
 	font-src 'self';
 	img-src * blob: data:;
 	media-src * blob: data:;
 	style-src 'self' 'unsafe-inline' *.googleapis.com *.googletagmanager.com;
-	child-src *.youtube.com *.google.com *.googletagmanager.com;
+	child-src 'self' *.youtube.com *.google.com *.googletagmanager.com;
 	script-src 'self' 'unsafe-eval' 'unsafe-inline' *.googletagmanager.com;
 	connect-src *;
 `
@@ -48,43 +51,60 @@ const securityHeaders = [
 	},
 ]
 
-module.exports = withBundleAnalyzer({
-	images: {
-		domains: ["ik.imagekit.io"],
-	},
-	sassOptions: {
-		prependData: `
+module.exports = withBundleAnalyzer(
+	withPWA({
+		images: {
+			domains: ["ik.imagekit.io"],
+		},
+		sassOptions: {
+			prependData: `
 			@import "./styles/common/_unit.scss";
 			@import "./styles/common/_animations.scss";
 			@import "./styles/common/_mixins.scss";
 		`,
-	},
-	async redirects() {
-		return [
-			{
-				source: "/home",
-				destination: "/",
-				permanent: true,
-			},
-			{
-				source: "/github",
-				destination: "/",
-				permanent: true,
-			},
-		]
-	},
-	experimental: {
-		eslint: true,
-		turboMode: true,
-	},
-	trailingSlash: true,
-	reactStrictMode: true,
-	async headers() {
-		return [
-			{
-				source: "/(.*)",
-				headers: securityHeaders,
-			},
-		]
-	},
-})
+		},
+		async redirects() {
+			return [
+				{
+					source: "/home",
+					destination: "/",
+					permanent: true,
+				},
+				{
+					source: "/github",
+					destination: "/",
+					permanent: true,
+				},
+			]
+		},
+		experimental: {
+			eslint: true,
+			turboMode: true,
+		},
+		trailingSlash: true,
+		reactStrictMode: true,
+		async headers() {
+			return [
+				{
+					source: "/(.*)",
+					headers: securityHeaders,
+				},
+			]
+		},
+		pwa: {
+			dest: "public",
+			runtimeCaching,
+		},
+		webpack: (config, { dev, isServer }) => {
+			if (!dev && !isServer) {
+				Object.assign(config.resolve.alias, {
+					react: "preact/compat",
+					"react-dom/test-utils": "preact/test-utils",
+					"react-dom": "preact/compat",
+				})
+			}
+
+			return config
+		},
+	}),
+)
