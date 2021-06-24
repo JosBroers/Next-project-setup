@@ -5,8 +5,8 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 const ContentSecurityPolicy = `
 	default-src 'self';
 	font-src 'self';
-	img-src 'self' 'ik.imagekit.io';
-	media-src 'self' 'ik.imagekit.io';
+	img-src * blob: data:;
+	media-src * blob: data:;
 	style-src 'self' 'unsafe-inline' *.googleapis.com *.googletagmanager.com;
 	child-src *.youtube.com *.google.com *.googletagmanager.com;
 	script-src 'self' 'unsafe-eval' 'unsafe-inline' *.googletagmanager.com;
