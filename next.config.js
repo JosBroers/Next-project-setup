@@ -2,6 +2,52 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 	enabled: process.env.ANALYZE === "true",
 })
 
+const ContentSecurityPolicy = `
+	default-src 'self';
+	font-src 'self';
+	img-src 'self' 'ik.imagekit.io';
+	media-src 'self' 'ik.imagekit.io';
+	style-src 'self' 'unsafe-inline' *.googleapis.com *.googletagmanager.com;
+	child-src *.youtube.com *.google.com *.googletagmanager.com;
+	script-src 'self' 'unsafe-eval' 'unsafe-inline' *.googletagmanager.com;
+	connect-src *;
+`
+
+const securityHeaders = [
+	{
+		key: "Content-Security-Policy",
+		value: ContentSecurityPolicy.replace(/\n/g, ""),
+	},
+	{
+		key: "Referrer-Policy",
+		value: "origin-when-cross-origin",
+	},
+	{
+		key: "X-Frame-Options",
+		value: "DENY",
+	},
+	{
+		key: "X-Content-Type-Options",
+		value: "nosniff",
+	},
+	{
+		key: "X-DNS-Prefetch-Control",
+		value: "on",
+	},
+	{
+		key: "X-XSS-Protection",
+		value: "1; mode=block",
+	},
+	{
+		key: "Strict-Transport-Security",
+		value: "max-age=31536000; includeSubDomains; preload",
+	},
+	{
+		key: "Permissions-Policy",
+		value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+	},
+]
+
 module.exports = withBundleAnalyzer({
 	images: {
 		domains: ["ik.imagekit.io"],
@@ -29,7 +75,16 @@ module.exports = withBundleAnalyzer({
 	},
 	experimental: {
 		eslint: true,
+		turboMode: true,
 	},
 	trailingSlash: true,
 	reactStrictMode: true,
+	async headers() {
+		return [
+			{
+				source: "/(.*)",
+				headers: securityHeaders,
+			},
+		]
+	},
 })
