@@ -49,7 +49,7 @@ class MyDocument extends Document {
 						as="font"
 						crossOrigin=""
 					/>
-					<link rel="preconnect" href="https://ik.imagekit.io/" crossOrigin="" />
+					<link rel="dns-prefetch" href="https://ik.imagekit.io/" crossOrigin="" />
 					<link rel="dns-prefetch" href="https://www.googletagmanager.com/" crossOrigin="" />
 					<link rel="dns-prefetch" href="https://www.google-analytics.com/" crossOrigin="" />
 				</Head>
