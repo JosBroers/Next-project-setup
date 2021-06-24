@@ -9,49 +9,49 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-72,w-72",
+      "src": "/favicon/favicon_72x72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-96,w-96",
+      "src": "/favicon/favicon_96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-128,w-128",
+      "src": "/favicon/favicon_128x128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-144,w-144",
+      "src": "/favicon/favicon_144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-152,w-152",
+      "src": "/favicon/favicon_152x152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-192,w-192",
+      "src": "/favicon/favicon_192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-384,w-384",
+      "src": "/favicon/favicon_384x384.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://ik.imagekit.io/jobrodo/jobrodo/favicon_UMYJ6XtNm.png?tr=w-512,w-512",
+      "src": "/favicon/favicon_512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

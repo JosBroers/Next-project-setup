@@ -51,32 +51,29 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 							sizes="16x16"
 							type="image/png"
 							rel="shortcut icon"
-							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-16,w-16`}
+							href="/favicons/favicon_16x16.png"
 						/>
 						<link
 							sizes="32x32"
 							type="image/png"
 							rel="shortcut icon"
-							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-32,h-32`}
+							href="/favicons/favicon_32x32.png"
 						/>
 						<link
 							sizes="96x96"
 							type="image/png"
 							rel="shortcut icon"
-							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-96,h-96`}
+							href="/favicons/favicon_96x96.png"
 						/>
 						<link
 							sizes="192x192"
 							type="image/png"
 							rel="shortcut icon"
-							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-192,h-192`}
+							href="/favicons/favicon_192x192.png"
 						/>
 						<link rel="canonical" href={url} />
 						<link rel="manifest" href="/manifest.json" />
-						<link
-							rel="apple-touch-icon"
-							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-180,h-180`}
-						/>
+						<link rel="apple-touch-icon" href="/favicons/favicon_180x180.png" />
 						<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 						<meta name="viewport" content="initial-scale=1, width=device-width" />
 						<meta property="og:url" content={url} />
