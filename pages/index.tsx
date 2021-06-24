@@ -100,8 +100,24 @@ const Home = () => {
 								<Button
 									type="external"
 									styling="none"
+									link="https://preactjs.com/"
+									title="Preact"
+								/>
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
 									link="https://prettier.io/"
 									title="Prettier"
+								/>
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
+									link="https://web.dev/progressive-web-apps/"
+									title="Progressive web app"
 								/>
 							</li>
 							<li>
@@ -114,6 +130,22 @@ const Home = () => {
 							</li>
 							<li>
 								<Button type="external" styling="none" link="https://sass-lang.com/" title="SCSS" />
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
+									link="https://securityheaders.com/"
+									title="Security headers"
+								/>
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
+									link="https://swr.vercel.app/"
+									title="Stale While Revalidate (SWR)"
+								/>
 							</li>
 							<li>
 								<Button
