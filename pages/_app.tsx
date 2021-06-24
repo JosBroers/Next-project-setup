@@ -73,11 +73,12 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
 						/>
 						<link rel="canonical" href={url} />
 						<link rel="manifest" href="/manifest.json" />
-						<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-						<meta
-							name="viewport"
-							content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+						<link
+							rel="apple-touch-icon"
+							href={`${process.env.NEXT_PUBLIC_IMAGEKIT}favicon_UMYJ6XtNm.png?tr=w-180,h-180`}
 						/>
+						<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+						<meta name="viewport" content="initial-scale=1, width=device-width" />
 						<meta property="og:url" content={url} />
 						<meta name="robots" content="index, follow" />
 						<meta property="og:type" content="website" />
