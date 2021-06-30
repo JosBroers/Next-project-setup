@@ -42,13 +42,6 @@ class MyDocument extends Document {
 						as="font"
 						crossOrigin=""
 					/>
-					<link
-						rel="preload"
-						href="/fonts/Inter-Italic.var.woff2"
-						type="font/woff2"
-						as="font"
-						crossOrigin=""
-					/>
 					<link rel="dns-prefetch" href="https://ik.imagekit.io/" crossOrigin="" />
 					<link rel="dns-prefetch" href="https://www.googletagmanager.com/" crossOrigin="" />
 					<link rel="dns-prefetch" href="https://www.google-analytics.com/" crossOrigin="" />
