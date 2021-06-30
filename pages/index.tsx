@@ -20,13 +20,13 @@ const Home = () => {
 		<>
 			<Head>
 				<title>{title}</title>
-				<meta property="og:title" content={title} />
-				<meta name="twitter:title" content={title} />
 				<meta name="description" content={description} />
-				<meta property="og:description" content={description} />
+				<meta name="twitter:title" content={title} />
 				<meta name="twitter:description" content={description} />
-				<meta property="og:image" content={image} />
 				<meta name="twitter:image" content={image} />
+				<meta property="og:title" content={title} />
+				<meta property="og:description" content={description} />
+				<meta property="og:image" content={image} />
 			</Head>
 			<Container>
 				<Flex
@@ -100,8 +100,24 @@ const Home = () => {
 								<Button
 									type="external"
 									styling="none"
+									link="https://preactjs.com/"
+									title="Preact"
+								/>
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
 									link="https://prettier.io/"
 									title="Prettier"
+								/>
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
+									link="https://web.dev/progressive-web-apps/"
+									title="Progressive web app"
 								/>
 							</li>
 							<li>
@@ -114,6 +130,22 @@ const Home = () => {
 							</li>
 							<li>
 								<Button type="external" styling="none" link="https://sass-lang.com/" title="SCSS" />
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
+									link="https://securityheaders.com/"
+									title="Security headers"
+								/>
+							</li>
+							<li>
+								<Button
+									type="external"
+									styling="none"
+									link="https://swr.vercel.app/"
+									title="Stale While Revalidate (SWR)"
+								/>
 							</li>
 							<li>
 								<Button
