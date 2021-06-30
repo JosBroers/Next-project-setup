@@ -11,7 +11,7 @@ const Header = () => (
 			width={1000}
 			height={571}
 			placeholder="blur"
-			blurDataURL={process.env.NEXT_PUBLIC_IMAGEKIT}
+			blurDataURL={process.env.NEXT_PUBLIC_BASE64}
 			priority
 		/>
 	</header>
